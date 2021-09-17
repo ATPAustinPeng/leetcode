@@ -14,6 +14,10 @@
     Input: cost = [1,100,1,1,1,100,1,1,100,1]
     Output: 6
     Explanation: Cheapest is: start on cost[0], and only step on 1s, skipping cost[3].
+
+    Constraints:
+    2 <= cost.length <= 1000
+    0 <= cost[i] <= 999
  */
 
 public class Problem746 {
