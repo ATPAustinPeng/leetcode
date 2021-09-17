@@ -18,7 +18,7 @@ public class Problem509 {
             return n;
         }
         if (dp[n] == 0) {
-            dp[n] = fibH(dp, n-1) + fibH(dp, n-2);
+            dp[n] = fibH(dp, n - 1) + fibH(dp, n - 2);
         }
         return dp[n];
     }
