@@ -40,26 +40,26 @@ public class Problem153 {
         // (2) the minimum is anywhere else in the array
         
         int left = 0;
-        int mid = nums.length / 2;
         int right = nums.length - 1;
+        int mid = (left + right) / 2;
         
-        while (left != right) {
-            if (nums[mid] < nums[left]) {
+        // loop will terminate on left < right as left will always get incremented by 1
+        // solution will be located at the left pointer since left is being incremented
+        while (left < right) {
+            // checking the nums[right] works better since if the array has an even number,
+            // the calculation for mid will pick the element to the "left" of the actual mid
+            // ex. 0, 1, 2, 3 -> mid picks 1
+            if (nums[mid] < nums[right]) {
+                // right = mid - 1 doesn't work
+                // since nums[mid] might be the minimum as it is smaller than nums[right]
                 right = mid;
                 mid = (left + right) / 2;
-            } else if (nums[mid] > nums[right]) {
-                left = mid;
-                mid = (left + right) / 2;
             } else {
-                return nums[0];
-            }
-            
-            if (left == mid) {
-                return nums[right];
-            } else if (right == mid) {
-                return nums[left];
+                // left = mid + 1 works
+                // since nums[mid] >= nums[right] means nums[mid] is not the smallest value
+                left = mid + 1;
+                mid = (left + right) / 2;
             }
         }
         return nums[left];
-    }
 }
