@@ -26,51 +26,110 @@
 */
 
 public class Problem844 {
+    // Solution 4:  pointer solution, don't build string, compare live
     public boolean backspaceCompare(String s, String t) {
-        // Solution 1: for loop, remove 2 characters when # is encountered
-            // and not at the beginning of string
-        // super slow runtime
-        // s = removeHashtag(s);
-        // t = removeHashtag(t);
-        // return s.equals(t);
-
-        // Solution 2: use stacks
-            // pop if '#', otherwise push
-        Stack<Character> sStack = new Stack<Character>();
-        Stack<Character> tStack = new Stack<Character>();
+        int sCounter = s.length() - 1;
+        int tCounter = t.length() - 1;
         
-        for (char c : s.toCharArray()) {
-            if (c == '#') {
-                if (sStack.size() > 0) {
-                    sStack.pop();
-                }
+        int sIgnore = 0;
+        int tIgnore = 0;
+        
+        while (sCounter >= 0 || tCounter >= 0) {
+            char sChar = sCounter >= 0 ? s.charAt(sCounter) : '-';
+            if (sChar == '#') {
+                sIgnore++;
+                sCounter--;
+            } else if (sIgnore > 0) {
+                sIgnore--;
+                sCounter--;
             } else {
-                sStack.push(c);
-            }
-        }
-        
-        for (char c : t.toCharArray()) {
-            if (c == '#') {
-                if (tStack.size() > 0) {
-                    tStack.pop();
+                char tChar = tCounter >= 0 ? t.charAt(tCounter) : '-';
+                tCounter--;
+                if (tChar == '#') {
+                    tIgnore++;
+                } else if (tIgnore > 0) {
+                    tIgnore--;
+                    // tCounter--;
+                } else if (sChar != tChar) {
+                    return false;
+                } else {
+                    sCounter--;
                 }
-            } else {
-                tStack.push(c);
             }
         }
         
-        if (sStack.size() != tStack.size()) {
-            return false;
-        }
-        
-        while (sStack.size() > 0 & tStack.size() > 0) {
-            if (sStack.pop() != tStack.pop()) {
-                return false;
-            }
-        }
         return true;
     }
-    
+
+    // Solution 3: pointer solution, work backwards and track number of '#'
+    // when comparing, use an "ignoreCount" to know how many words to skip if not '#'
+    // public boolean backspaceCompare(String s, String t) {
+    //     return buildString(s).equals(buildString(t));
+    // }
+
+    // private String buildString(String x) {
+    //     StringBuilder sb = new StringBuilder();
+        
+    //     int ignoreCount = 0;
+        
+    //     for (int i = x.length() - 1; i >= 0; i--) {
+    //         if (x.charAt(i) == '#') {
+    //             ignoreCount++;
+    //         } else {
+    //             if (ignoreCount > 0) {
+    //                 ignoreCount--;
+    //             } else if (i - ignoreCount >= 0) {
+    //                 sb.append(x.charAt(i - ignoreCount));
+    //             }
+    //         }
+    //     }
+    //     return sb.toString();
+    // }
+
+    // Solution 2: use stacks to create final string
+    // public boolean backspaceCompare(String s, String t) {
+    //     Stack<Character> sStack = new Stack<Character>();
+    //     Stack<Character> tStack = new Stack<Character>();
+        
+    //     for (char c : s.toCharArray()) {
+    //         if (c == '#') {
+    //             if (sStack.size() > 0) {
+    //                 sStack.pop();
+    //             }
+    //         } else {
+    //             sStack.push(c);
+    //         }
+    //     }
+        
+    //     for (char c : t.toCharArray()) {
+    //         if (c == '#') {
+    //             if (tStack.size() > 0) {
+    //                 tStack.pop();
+    //             }
+    //         } else {
+    //             tStack.push(c);
+    //         }
+    //     }
+        
+    //     if (sStack.size() != tStack.size()) {
+    //         return false;
+    //     }
+        
+    //     while (sStack.size() > 0 & tStack.size() > 0) {
+    //         if (sStack.pop() != tStack.pop()) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    // Solution 1: for loop, remove 2 characters when # is encountered and not at the beginning of string
+    // public boolean backspaceCompare(String s, String t) {
+    //     s = removeHashtag(s);
+    //     t = removeHashtag(t);
+    //     return s.equals(t);
+    // }
+
     // private String removeHashtag(String s) {
     //     for (int i = 0; i < s.length(); i++) {
     //         if (i != 0 && s.charAt(i) == '#') {
