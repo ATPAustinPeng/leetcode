@@ -30,24 +30,60 @@ public class Problem844 {
         // Solution 1: for loop, remove 2 characters when # is encountered
             // and not at the beginning of string
         // super slow runtime
-        s = removeHashtag(s);
-        t = removeHashtag(t);
-        return s.equals(t);
-    }
-    
-    private String removeHashtag(String s) {
-        for (int i = 0; i < s.length(); i++) {
-            if (i != 0 && s.charAt(i) == '#') {
-                if (i + 1 >= s.length()) {
-                    s = s.substring(0, i - 1);
-                } else {
-                    s = s.substring(0, i - 1) + s.substring(i + 1);
+        // s = removeHashtag(s);
+        // t = removeHashtag(t);
+        // return s.equals(t);
+
+        // Solution 2: use stacks
+            // pop if '#', otherwise push
+        Stack<Character> sStack = new Stack<Character>();
+        Stack<Character> tStack = new Stack<Character>();
+        
+        for (char c : s.toCharArray()) {
+            if (c == '#') {
+                if (sStack.size() > 0) {
+                    sStack.pop();
                 }
-                i = i - 2;
-            } else if (s.charAt(i) == '#') {
-                s = s.substring(i);
+            } else {
+                sStack.push(c);
             }
         }
-        return s.replace("#", "");
+        
+        for (char c : t.toCharArray()) {
+            if (c == '#') {
+                if (tStack.size() > 0) {
+                    tStack.pop();
+                }
+            } else {
+                tStack.push(c);
+            }
+        }
+        
+        if (sStack.size() != tStack.size()) {
+            return false;
+        }
+        
+        while (sStack.size() > 0 & tStack.size() > 0) {
+            if (sStack.pop() != tStack.pop()) {
+                return false;
+            }
+        }
+        return true;
     }
+    
+    // private String removeHashtag(String s) {
+    //     for (int i = 0; i < s.length(); i++) {
+    //         if (i != 0 && s.charAt(i) == '#') {
+    //             if (i + 1 >= s.length()) {
+    //                 s = s.substring(0, i - 1);
+    //             } else {
+    //                 s = s.substring(0, i - 1) + s.substring(i + 1);
+    //             }
+    //             i = i - 2;
+    //         } else if (s.charAt(i) == '#') {
+    //             s = s.substring(i);
+    //         }
+    //     }
+    //     return s.replace("#", "");
+    // }
 }
