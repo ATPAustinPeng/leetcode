@@ -7,6 +7,7 @@
 | 1         | Two Sum                  | array, hashmap      |no|
 | 33		| Search in Rotated Sorted Array | array		 |yes|
 | 53		| Maximum Subarray		   | array, divide & conquer |yes|
+| 56        | Merge Intervals          | array               |no|
 | 70        | Climbing Stairs          | dynamic programming ||
 | 121		| Best Time to Buy and Sell Stock | array	     |yes|
 | 152		| Maximum Product Subarray | array				 |yes|
@@ -15,6 +16,7 @@
 | 238		| Product of Array Except Self | array			 |no|
 | 509       | Fibonacci Number         | dynamic programming ||
 | 746       | Min Cost Climbing Stairs | dynamic programming ||
+| 844       | Backspace String Compare | stack, pointer      |no|
 | 1137      | N-th Tribonacci Number   | dynamic programming ||
 
 ### Additional Questions
