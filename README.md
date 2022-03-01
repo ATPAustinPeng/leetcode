@@ -10,6 +10,7 @@
 | 56        | Merge Intervals          | array               |no|
 | 70        | Climbing Stairs          | dynamic programming ||
 | 121		| Best Time to Buy and Sell Stock | array	     |yes|
+| 146       | LRU Cache                | data structure      |yes|
 | 152		| Maximum Product Subarray | array				 |yes|
 | 153		| Find Minimum in Rotated Sorted Array | array 	 |no|
 | 217		| Contains Duplicate	   | array, hashset      |no|
@@ -28,6 +29,9 @@
 - Solve with recursion.
 - How would you find the indices of the start/end of the maximum subarray.
 - How would you find the minimum subarray?
+
+#### Problem 146. LRU Cache
+- solve without using LinkedHashMap
 
 #### Problem 152. Maximum Product Subarray
 - Solve with recursion.
