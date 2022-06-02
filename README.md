@@ -3,8 +3,9 @@
 ### Problems Solved
 
 | Problem # | Problem Name             | Problem Type        | Redo? |
-| --------- | ------------------------ | ------------------- ||
+| --------- | ------------------------ | ------------------- | - |
 | 1         | Two Sum                  | array, hashmap      |no|
+| 3 | Long Substring Without Repeating Characters | array | |
 | 33		| Search in Rotated Sorted Array | array		 |yes|
 | 53		| Maximum Subarray		   | array, divide & conquer |yes|
 | 56        | Merge Intervals          | array               |no|
@@ -15,10 +16,10 @@
 | 153		| Find Minimum in Rotated Sorted Array | array 	 |no|
 | 217		| Contains Duplicate	   | array, hashset      |no|
 | 238		| Product of Array Except Self | array			 |no|
-| 509       | Fibonacci Number         | dynamic programming ||
-| 746       | Min Cost Climbing Stairs | dynamic programming ||
+| 509       | Fibonacci Number         | dynamic programming |no|
+| 746       | Min Cost Climbing Stairs | dynamic programming |no|
 | 844       | Backspace String Compare | stack, pointer      |no|
-| 1137      | N-th Tribonacci Number   | dynamic programming ||
+| 1137      | N-th Tribonacci Number   | dynamic programming |no|
 
 ### Additional Questions
 #### Problem 33. Search in Rotated Sorted Array
