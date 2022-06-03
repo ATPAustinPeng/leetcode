@@ -5,11 +5,12 @@
 | Problem # | Problem Name             | Problem Type        | Redo? |
 | --------- | ------------------------ | ------------------- | - |
 | 1         | Two Sum                  | array, hashmap      |no|
-| 3 | Long Substring Without Repeating Characters | array | |
+|3|Long Substring Without Repeating Characters|array, string||
+|8|String to Integer (atoi)|array, string||
 | 33		| Search in Rotated Sorted Array | array		 |yes|
 | 53		| Maximum Subarray		   | array, divide & conquer |yes|
 | 56        | Merge Intervals          | array               |no|
-| 70        | Climbing Stairs          | dynamic programming ||
+| 70        | Climbing Stairs          | dynamic programming |no|
 | 121		| Best Time to Buy and Sell Stock | array	     |yes|
 | 146       | LRU Cache                | data structure      |yes|
 | 152		| Maximum Product Subarray | array				 |yes|
