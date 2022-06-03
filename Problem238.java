@@ -21,23 +21,26 @@
 
 public class Problem238 {
 	public int[] productExceptSelf(int[] nums) {
-		// first pass: find trailing products (left to right)
-		// second pass: find trailing products (right to left)
-
-		int[] tempArr = new int[nums.length];
-
-		int temp = 1;
-		for (int i = 0; i < nums.length; i++) {
-			tempArr[i] = temp;
-			temp *= nums[i];
-		}
-
-		temp = 1;
-		for (int i = nums.length - 1; i >= 0; i--) {
-			tempArr[i] *= temp;
-			temp *= nums[i];
-		}
-
-		return tempArr;
+		// 2-pass solution
+        // left to right -> in an array, track product of all elements before the index
+        // ex. [1, 2, 3 ,4] will result in [1, 1, 2, 6]
+        // right to left -> in an array track product of all elements after the index
+        // ex. [1, 2, 3 ,4] will result in [24, 12, 4, 1]
+        // do these two passes together (for O(1) extra space)
+        
+        int len = nums.length;
+        int[] result = new int[len];
+        
+        result[0] = 1;
+        for (int i = 1; i < len; i++) {
+            result[i] = result[i - 1] * nums[i - 1];
+        }
+        
+        int rightToLeftProd = 1;
+        for (int i = len - 1; i >= 0; i--) {
+            result[i] = result[i] * rightToLeftProd;
+            rightToLeftProd *= nums[i];
+        }
+        return result;
 	}
 }
