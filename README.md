@@ -7,6 +7,7 @@
 | 1         | Two Sum                  | array, hashmap      |no|
 |3|Long Substring Without Repeating Characters|array, string||
 |8|String to Integer (atoi)|array, string||
+|13|Roman To Integer|array, string|
 | 33		| Search in Rotated Sorted Array | array		 |yes|
 | 53		| Maximum Subarray		   | array, divide & conquer |yes|
 | 56        | Merge Intervals          | array               |no|
