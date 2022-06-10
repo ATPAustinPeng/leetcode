@@ -23,23 +23,22 @@
 
 public class Problem121 {
 	public int maxProfit(int[] prices) {
-		if (prices.length == 1) {
-			return 0;
-		}
-
-		int currMaxProfit = 0;
-		int runningMinValue = prices[0];
-
-		// check if curr num is the minimum
-		// if min -> update min & go next
-		// else -> find difference between curr and min
-		for (int i = 1; i < prices.length; i++) {
-			if (prices[i] < runningMinValue) {
-				runningMinValue = prices[i];
-			} else if (prices[i] - runningMinValue > currMaxProfit) {
-				currMaxProfit = prices[i] - runningMinValue;
-			}
-		}
-		return currMaxProfit;
-	}
+        // track runningMin, always recalculate difference and save maxDifference
+        // if difference is negative, don't update
+        if (prices.length < 1) {
+            return 0;
+        }
+        
+        int runningMin = prices[0];
+        int res = 0;
+        
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] < runningMin) {
+                runningMin = prices[i];
+            } else if (prices[i] - runningMin > res) {
+                res = prices[i] - runningMin;
+            }
+        }
+        return res;
+    }
 }

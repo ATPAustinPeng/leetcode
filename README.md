@@ -6,6 +6,7 @@
 |3|Long Substring Without Repeating Characters|array, string||
 |8|String to Integer (atoi)|array, string|maybe|
 |13|Roman to Integer|array, string||
+|121|Best Time to Buy and Sell Stock|dp||
 |238|Product of Array Except Self|array, string||
 |283|Move Zeroes|array, string||
 
@@ -22,7 +23,6 @@
 | 53		| Maximum Subarray		   | array, divide & conquer |yes|
 | 56        | Merge Intervals          | array               |no|
 | 70        | Climbing Stairs          | dynamic programming |no|
-| 121		| Best Time to Buy and Sell Stock | array	     |yes|
 | 146       | LRU Cache                | data structure      |yes|
 | 152		| Maximum Product Subarray | array				 |yes|
 | 153		| Find Minimum in Rotated Sorted Array | array 	 |no|
