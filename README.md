@@ -3,7 +3,7 @@
 ## Summer 2023 Internship & Full-Time Position Problems
 |Problem #|Problem Name|Problem Type|Redo?|
 |-|-|-|-|
-
+|2|Two Sum|array||
 |3|Long Substring Without Repeating Characters|array, string||
 |8|String to Integer (atoi)|array, string|maybe|
 |13|Roman to Integer|array, string||
