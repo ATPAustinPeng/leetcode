@@ -27,16 +27,18 @@
 
 public class Problem1 {
 	public int[] twoSum(int[] nums, int target) {
-		// hashmap to track complement of previous numbers + index of original number
-		HashMap<Integer, Integer> hmap = new HashMap<>();
-
-		for (int i = 0; i < nums.length; i++) {
-			if (!hmap.containsKey(nums[i])) {
-				hmap.put(target - nums[i], i);
-			} else {
-				return new int[] { i, hmap.get(nums[i]) };
-			}
-		}
-		return null;
-	}
+        // store complement of current index
+        // access using current index value
+        Map<Integer, Integer> hm = new HashMap<>();
+        
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (hm.containsKey(nums[i])) {
+                return new int[] {hm.get(nums[i]), i};
+            }
+            hm.put(complement, i);
+        }
+        
+        return new int[] {Integer.MIN_VALUE};
+    }
 }
