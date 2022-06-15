@@ -8,6 +8,7 @@
 |3|Long Substring Without Repeating Characters|array, string||
 |8|String to Integer (atoi)|array, string|maybe|
 |13|Roman to Integer|array, string||
+|21|Merge Two Sorted Lists|linked list||
 |121|Best Time to Buy and Sell Stock|dp||
 |238|Product of Array Except Self|array, string||
 |283|Move Zeroes|array, string||
