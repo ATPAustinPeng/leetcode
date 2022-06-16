@@ -11,6 +11,7 @@
 |21|Merge Two Sorted Lists|linked list||
 |121|Best Time to Buy and Sell Stock|dp||
 |125|Valid Palindrome|string||
+|138|Copy List with Random Pointer|linked list||
 |238|Product of Array Except Self|array||
 |283|Move Zeroes|array||
 
