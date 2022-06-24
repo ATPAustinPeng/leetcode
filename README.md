@@ -4,15 +4,15 @@
 |Problem #|Problem Name|Problem Type|Redo?|
 |-|-|-|-|
 |1|Two Sum|array||
-|2|Add Two Numbers|linked list|on 6/30|
-|3|Long Substring Without Repeating Characters|array, string|on 6/16|
+|2|Add Two Numbers|linked list|on 6/30; think|
+|3|Longest Substring Without Repeating Characters|array, string|on 6/30; recode|
 |8|String to Integer (atoi)|string|maybe|
 |13|Roman to Integer|string||
 |21|Merge Two Sorted Lists|linked list||
 |121|Best Time to Buy and Sell Stock|dp||
 |125|Valid Palindrome|string||
 |138|Copy List with Random Pointer|linked list||
-|143|Reorder List|linked list|on 6/30|
+|143|Reorder List|linked list|on 6/30; think|
 |238|Product of Array Except Self|array||
 |283|Move Zeroes|array||
 

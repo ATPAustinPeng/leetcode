@@ -73,7 +73,7 @@ public class Problem3 {
             char r = s.charAt(right);
             charset[r]++;
             
-            // if expanding the sliding window, there is a dupe, contracrt the window
+            // if expanding the sliding window, there is a dupe, contract the window
             while (charset[r] > 1) {
                 char l = s.charAt(left);
                 charset[l]--;
