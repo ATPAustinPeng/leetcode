@@ -4,7 +4,7 @@
 |Problem #|Problem Name|Problem Type|Redo?|
 |-|-|-|-|
 |1|Two Sum|array||
-|2|Add Two Numbers|linked list|on 6/16|
+|2|Add Two Numbers|linked list|on 6/30|
 |3|Long Substring Without Repeating Characters|array, string|on 6/16|
 |8|String to Integer (atoi)|string|maybe|
 |13|Roman to Integer|string||

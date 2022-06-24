@@ -25,75 +25,57 @@
     It is guaranteed that the list represents a number that does not have leading zeros.
 */
 
+// HINT: no need for an if/else node if you return result.next!
 public class Problem2 {
+    /**
+    * Definition for singly-linked list.
+    * public class ListNode {
+    *     int val;
+    *     ListNode next;
+    *     ListNode() {}
+    *     ListNode(int val) { this.val = val; }
+    *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    * }
+    */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode();
-        ListNode dummyNode = result;
+        int carry = 0;
+        ListNode result = new ListNode(0);
+        ListNode dummy = result;
+        
         boolean isFirst = true;
-        boolean hasCarry = false;
         
-        while (l1 != null && l2 != null) {
-            int nodeSum = l1.val + l2.val;
+        while (l1 != null || l2 != null) {     
+            int val1 = l1 != null ? l1.val : 0;
+            int val2 = l2 != null ? l2.val : 0;
             
-            if (hasCarry) {
-                nodeSum += 1;
+            int sum = carry + val1 + val2;
+            carry = sum / 10;
+            
+            dummy.next = new ListNode(sum % 10);
+            dummy = dummy.next;
+            
+            // if (isFirst) {
+            //     result = new ListNode(sum % 10);
+            //     dummy = result;
+            //     isFirst = false;
+            // } else {
+            //     dummy.next = new ListNode(sum % 10);
+            //     dummy = dummy.next;
+            // }
+            
+            if (l1 != null) {
+                l1 = l1.next;
             }
             
-            hasCarry = false;
-            if (nodeSum > 9) {
-                hasCarry = true;
-                nodeSum %= 10;
+            if (l2 != null) {
+                l2 = l2.next;
             }
-            
-            if (isFirst) {
-                result.val = nodeSum;
-            } else {
-                ListNode newNode = new ListNode(nodeSum);
-                dummyNode.next = newNode;
-                dummyNode = dummyNode.next;
-            }
-            
-
-            l1 = l1.next;
-            l2 = l2.next;
-            isFirst = false;
         }
         
-        while (l1 != null) {
-            if (hasCarry) {
-                l1.val += 1;
-            }
-            
-            hasCarry = false;
-            if (l1.val > 9) {
-                hasCarry = true;
-                l1.val %= 10;
-            }
-            dummyNode.next = new ListNode(l1.val);
-            dummyNode = dummyNode.next;
-            l1 = l1.next;
+        if (carry == 1) {
+            dummy.next = new ListNode(1);
         }
         
-        while (l2 != null) {
-            if (hasCarry) {
-                l2.val += 1;
-            }
-            
-            hasCarry = false;
-            if (l2.val > 9) {
-                hasCarry = true;
-                l2.val %= 10;
-            }
-            
-            dummyNode.next = new ListNode(l2.val);
-            dummyNode = dummyNode.next;
-            l2 = l2.next;
-        }
-        
-        if (hasCarry) {
-            dummyNode.next = new ListNode(1);
-        }
-        
-        return result;
+        return result.next;
     }
 }
