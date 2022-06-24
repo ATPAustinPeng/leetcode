@@ -12,6 +12,7 @@
 |121|Best Time to Buy and Sell Stock|dp||
 |125|Valid Palindrome|string||
 |138|Copy List with Random Pointer|linked list||
+|143|Reorder List|linked list|on 6/30|
 |238|Product of Array Except Self|array||
 |283|Move Zeroes|array||
 
