@@ -18,6 +18,7 @@
 |143|Reorder List|linked list|on 6/30; think|
 |238|Product of Array Except Self|array||
 |283|Move Zeroes|array||
+|1249|Minimum Remove to Make Valid Parentheses|string, stack|on 7/7 think|
 
 
 
