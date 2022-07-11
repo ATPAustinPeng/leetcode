@@ -2,25 +2,26 @@
 
 ## Summer 2023 Internship & Full-Time Position Problems
 
-| Problem # | Problem Name                                   | Problem Type  | Redo?   |
-| --------- | ---------------------------------------------- | ------------- | ------- |
-| 1         | Two Sum                                        | array         |         |
-| 2         | Add Two Numbers                                | linked list   |         |
-| 3         | Longest Substring Without Repeating Characters | array, string |         |
-| 8         | String to Integer (atoi)                       | string        | maybe   |
-| 13        | Roman to Integer                               | string        |         |
-| 21        | Merge Two Sorted Lists                         | linked list   |         |
-| 46        | Permutations                                   | recursion     | on 7/14 |
-| 47        | Permutations II                                | recursion     | on 7/14 |
-| 91        | Decode Ways                                    | dp            | on 7/10 |
-| 121       | Best Time to Buy and Sell Stock                | dp            |         |
-| 125       | Valid Palindrome                               | string        |         |
-| 138       | Copy List with Random Pointer                  | linked list   |         |
-| 143       | Reorder List                                   | linked list   | on 7/14 |
-| 238       | Product of Array Except Self                   | array         |         |
-| 283       | Move Zeroes                                    | array         |         |
-| 1249      | Minimum Remove to Make Valid Parentheses       | string, stack |         |
-| 1762      | Buildings With an Ocean View                   | array         |         |
+| Problem # | Problem Name                                   | Problem Type        | Redo?   |
+| --------- | ---------------------------------------------- | ------------------- | ------- |
+| 1         | Two Sum                                        | array               |         |
+| 2         | Add Two Numbers                                | linked list         |         |
+| 3         | Longest Substring Without Repeating Characters | array, string       |         |
+| 8         | String to Integer (atoi)                       | string              | maybe   |
+| 13        | Roman to Integer                               | string              |         |
+| 21        | Merge Two Sorted Lists                         | linked list         |         |
+| 46        | Permutations                                   | recursion           | on 7/14 |
+| 47        | Permutations II                                | recursion           | on 7/14 |
+| 91        | Decode Ways                                    | dp                  | on 7/10 |
+| 121       | Best Time to Buy and Sell Stock                | dp                  |         |
+| 125       | Valid Palindrome                               | string              |         |
+| 138       | Copy List with Random Pointer                  | linked list         |         |
+| 143       | Reorder List                                   | linked list         | on 7/14 |
+| 238       | Product of Array Except Self                   | array               |         |
+| 283       | Move Zeroes                                    | array               |         |
+| 314       | Binary Tree Vertical Order Traversal           | bfs, dfs, tree, map | on 7/20 |
+| 1249      | Minimum Remove to Make Valid Parentheses       | string, stack       |         |
+| 1762      | Buildings With an Ocean View                   | array               |         |
 
 ### Problems Solved
 
