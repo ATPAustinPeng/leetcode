@@ -20,6 +20,7 @@
 | 238       | Product of Array Except Self                   | array               |         |
 | 283       | Move Zeroes                                    | array               |         |
 | 314       | Binary Tree Vertical Order Traversal           | bfs, dfs, tree, map | on 7/20 |
+| 362       | Design Hit Counter                             | queue               | on 7/21 |
 | 1249      | Minimum Remove to Make Valid Parentheses       | string, stack       |         |
 | 1762      | Buildings With an Ocean View                   | array               |         |
 
