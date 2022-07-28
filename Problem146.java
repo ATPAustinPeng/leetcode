@@ -45,38 +45,100 @@
  */
 
 public class Problem146 {
-    class LRUCache {    
-        private Map<Integer, Integer> lhmap;
-        private int capacity;
-        private int size;
-            
+    // implement doubly linked list so you can add/remove nodes at any point in the linked list given the node
+    // use a hashmap (int key, DLLNode node) so that you can get the node for easy add/remove
+
+    class LRUCache {
+        public int size;
+        public int capacity;
+        public Map<Integer, DLLNode> hmap;
+        public DLLNode head;
+        public DLLNode tail;
+
         public LRUCache(int capacity) {
-            lhmap = new LinkedHashMap<>();
-            this.capacity = capacity;
             this.size = 0;
+            this.capacity = capacity;
+            hmap = new HashMap<>();
+            head = new DLLNode();
+            tail = new DLLNode();
+            
+            head.next = tail;
+            tail.prev = head;
         }
         
         public int get(int key) {
-            if (this.lhmap.containsKey(key)) {
-                int value = lhmap.get(key);
-                lhmap.remove(key);
-                lhmap.put(key, value);
-                return lhmap.get(key);
+            DLLNode temp = hmap.get(key);
+            
+            if (temp == null) {
+                return -1;
             }
-            return -1;
+            
+            justUsed(temp);
+            return temp.value;
         }
         
         public void put(int key, int value) {
-            if (lhmap.containsKey(key)) {
-                lhmap.remove(key);
-            } else if (this.size >= this.capacity) {
-                int leastRecentKey = lhmap.keySet().iterator().next();
-                lhmap.remove(leastRecentKey);
-            } else {
-                this.size++;
-            }
+            DLLNode temp = hmap.get(key);
             
-            lhmap.put(key, value);
+            if (hmap.get(key) != null) {
+                // already exists (replace)
+                remove(temp);
+                
+                temp.value = value;
+                hmap.put(key, temp);
+                
+                add(temp);
+            } else {
+                // doesn't exist yet (add/evict)
+                temp = new DLLNode();
+                temp.key = key;
+                temp.value = value;
+                
+                if (size < capacity) {
+                    // not at capacity (add)
+                    hmap.put(key, temp);
+                    add(temp);
+                    size++;
+                } else if (size >= capacity) {
+                    // at capacity (evict)
+                    int removedKey = remove(tail.prev);
+                    hmap.remove(removedKey);
+                    hmap.put(key, temp);
+                    add(temp);
+                }
+            }
+        }
+        
+        class DLLNode {
+            public int key;
+            public int value;
+            public DLLNode prev;
+            public DLLNode next;
+        }
+        
+        // head is MRU (add is always MRU)
+        public void add(DLLNode node) {
+            node.prev = head;
+            node.next = head.next;
+            
+            head.next = node;
+            node.next.prev = node;
+        }
+        
+        // tail is LRU (always evict LRU)
+        public int remove(DLLNode node) {
+            DLLNode prev = node.prev;
+            DLLNode next = node.next;
+            
+            prev.next = next;
+            next.prev = prev;
+            return node.key;
+        }
+        
+        // move to right after head
+        public void justUsed(DLLNode node) {
+            remove(node);
+            add(node);
         }
     }
 }

@@ -17,6 +17,7 @@
 | 125       | Valid Palindrome                               | string              |         |
 | 138       | Copy List with Random Pointer                  | linked list         |         |
 | 143       | Reorder List                                   | linked list         | on 7/14 |
+| 146       | LRU Cache                                      |                     | on 7/31 |
 | 238       | Product of Array Except Self                   | array               |         |
 | 283       | Move Zeroes                                    | array               |         |
 | 314       | Binary Tree Vertical Order Traversal           | bfs, dfs, tree, map | on 7/20 |
