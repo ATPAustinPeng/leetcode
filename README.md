@@ -2,29 +2,29 @@
 
 ## Summer 2023 Internship & Full-Time Position Problems
 
-| Problem # | Problem Name                                   | Problem Type        | Redo?   |
-| --------- | ---------------------------------------------- | ------------------- | ------- |
-| 1         | Two Sum                                        | array               |         |
-| 2         | Add Two Numbers                                | linked list         |         |
-| 3         | Longest Substring Without Repeating Characters | array, string       |         |
-| 8         | String to Integer (atoi)                       | string              | maybe   |
-| 13        | Roman to Integer                               | string              |         |
-| 21        | Merge Two Sorted Lists                         | linked list         |         |
-| 46        | Permutations                                   | recursion           | on 7/14 |
-| 47        | Permutations II                                | recursion           | on 7/14 |
-| 91        | Decode Ways                                    | dp                  | on 7/10 |
-| 121       | Best Time to Buy and Sell Stock                | dp                  |         |
-| 125       | Valid Palindrome                               | string              |         |
-| 138       | Copy List with Random Pointer                  | linked list         |         |
-| 143       | Reorder List                                   | linked list         | on 7/14 |
-| 146       | LRU Cache                                      |                     | on 7/31 |
-| 238       | Product of Array Except Self                   | array               |         |
-| 283       | Move Zeroes                                    | array               |         |
-| 314       | Binary Tree Vertical Order Traversal           | bfs, dfs, tree, map | on 7/20 |
-| 362       | Design Hit Counter                             | queue               | on 7/21 |
-| 400       | Nth Digit                                      | binary search       |         |
-| 1249      | Minimum Remove to Make Valid Parentheses       | string, stack       |         |
-| 1762      | Buildings With an Ocean View                   | array               |         |
+| Problem # | Problem Name                                   |
+| --------- | ---------------------------------------------- |
+| 1         | Two Sum                                        |
+| 2         | Add Two Numbers                                |
+| 3         | Longest Substring Without Repeating Characters |
+| 8         | String to Integer (atoi)                       |
+| 13        | Roman to Integer                               |
+| 21        | Merge Two Sorted Lists                         |
+| 46        | Permutations                                   |
+| 47        | Permutations II                                |
+| 91        | Decode Ways                                    |
+| 121       | Best Time to Buy and Sell Stock                |
+| 125       | Valid Palindrome                               |
+| 138       | Copy List with Random Pointer                  |
+| 143       | Reorder List                                   |
+| 146       | LRU Cache                                      |
+| 238       | Product of Array Except Self                   |
+| 283       | Move Zeroes                                    |
+| 314       | Binary Tree Vertical Order Traversal           |
+| 362       | Design Hit Counter                             |
+| 400       | Nth Digit                                      |
+| 1249      | Minimum Remove to Make Valid Parentheses       |
+| 1762      | Buildings With an Ocean View                   |
 
 ### Problems Solved
 
