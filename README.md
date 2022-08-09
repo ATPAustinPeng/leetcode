@@ -25,6 +25,7 @@
 | 400       | Nth Digit                                      |
 | 1249      | Minimum Remove to Make Valid Parentheses       |
 | 1762      | Buildings With an Ocean View                   |
+| 1878      | Get Biggest Three Rhombus Sums in a Grid       |
 
 ### Problems Solved
 
