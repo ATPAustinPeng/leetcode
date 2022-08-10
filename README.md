@@ -25,6 +25,7 @@
 | 362       | Design Hit Counter                             |
 | 400       | Nth Digit                                      |
 | 1249      | Minimum Remove to Make Valid Parentheses       |
+| 1480      | Running Sum of 1D Array                        |
 | 1762      | Buildings With an Ocean View                   |
 | 1861      | Rotating the Box                               |
 | 1878      | Get Biggest Three Rhombus Sums in a Grid       |
