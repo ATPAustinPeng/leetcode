@@ -24,6 +24,7 @@
 | 314       | Binary Tree Vertical Order Traversal           |
 | 362       | Design Hit Counter                             |
 | 400       | Nth Digit                                      |
+| 724       | Find Pivot Index                               |
 | 1249      | Minimum Remove to Make Valid Parentheses       |
 | 1480      | Running Sum of 1D Array                        |
 | 1762      | Buildings With an Ocean View                   |
