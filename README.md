@@ -18,6 +18,7 @@
 | 138       | Copy List with Random Pointer                  |
 | 143       | Reorder List                                   |
 | 146       | LRU Cache                                      |
+| 204       | Count Primes                                   |
 | 238       | Product of Array Except Self                   |
 | 283       | Move Zeroes                                    |
 | 314       | Binary Tree Vertical Order Traversal           |
