@@ -24,6 +24,7 @@
 | 314       | Binary Tree Vertical Order Traversal           |
 | 362       | Design Hit Counter                             |
 | 400       | Nth Digit                                      |
+| 445       | Add Two Numbers II                             |
 | 724       | Find Pivot Index                               |
 | 1099      | Two Sum Less Than K                            |
 | 1249      | Minimum Remove to Make Valid Parentheses       |
