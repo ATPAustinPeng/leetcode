@@ -22,7 +22,7 @@
 
 public class Problem217 {
 	public boolean containsDuplicate(int[] nums) {
-		HashSet<Integer> hset = new HashSet<>();
+		Set<Integer> hset = new HashSet<>();
 
 		for (int i = 0; i < nums.length; i++) {
 			if (hset.contains(nums[i])) {
@@ -31,6 +31,7 @@ public class Problem217 {
 				hset.add(nums[i]);
 			}
 		}
+
 		return false;
 	}
 }
