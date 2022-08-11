@@ -26,29 +26,24 @@
 
 public class Problem53 {
 	public int maxSubArray(int[] nums) {
-		/*
-		 * INTUITIVE APPROACH: O(n)
-		 * track maxSum and currentSum
-		 * loop through array -> update currentSum
-		 * -> update maxSum when currentSum > maxSum
-		 * 
-		 * if currentSum < 0, set currentSum = 0 since a negative sum can only decrease
-		 * future subarray sums
-		 */
-
-		int currentSum = 0;
-		int maxSum = Integer.MIN_VALUE;
-
-		for (int i = 0; i < nums.length; i++) {
-			currentSum += nums[i];
-			if (currentSum > maxSum) {
-				maxSum = currentSum;
-			}
-
-			if (currentSum < 0) {
-				currentSum = 0;
-			}
-		}
-		return maxSum;
-	}
+		public int maxSubArray(int[] nums) {
+        // dp array (bad & unnecessary)
+            // tracks maxSubarraySum up to i
+            // dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
+            // iterate through dp to find max val
+        // use single int to track currSubarraySum
+            // currSubarraySum is updated with currSubarraySum + nums[i]
+            // or just nums[i] (which takes care of contiguous aspect)
+        
+        
+        int currSubarraySum = nums[0];
+        
+        int maxSubarraySum = currSubarraySum;
+        for (int i = 1; i < nums.length; i++) {
+            currSubarraySum = Math.max(currSubarraySum + nums[i], nums[i]);
+            maxSubarraySum = Math.max(currSubarraySum, maxSubarraySum);
+        }
+        
+        return maxSubarraySum;
+    }
 }
