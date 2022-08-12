@@ -27,6 +27,7 @@
 | 314       | Binary Tree Vertical Order Traversal           |                                          |
 | 325       | Maximum Size Subarray Sum Equals k             | 1 (not even close)                       |
 | 362       | Design Hit Counter                             |                                          |
+| 392       | Is Subsequence                                 | 1 (close, try dp solution)               |
 | 400       | Nth Digit                                      |                                          |
 | 445       | Add Two Numbers II                             |                                          |
 | 724       | Find Pivot Index                               |                                          |
