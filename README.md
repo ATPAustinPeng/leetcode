@@ -24,6 +24,7 @@
 | 238       | Product of Array Except Self                   |                              |
 | 283       | Move Zeroes                                    |                              |
 | 314       | Binary Tree Vertical Order Traversal           |                              |
+| 325       | Maximum Size Subarray Sum Equals k             | 1 (not even close)           |
 | 362       | Design Hit Counter                             |                              |
 | 400       | Nth Digit                                      |                              |
 | 445       | Add Two Numbers II                             |                              |
