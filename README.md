@@ -9,7 +9,7 @@
 | 3         | Longest Substring Without Repeating Characters |                                          |
 | 8         | String to Integer (atoi)                       |                                          |
 | 13        | Roman to Integer                               |                                          |
-| 21        | Merge Two Sorted Lists                         |                                          |
+| 21        | Merge Two Sorted Lists                         | 2 (close, try recursive, try in-place)   |
 | 46        | Permutations                                   |                                          |
 | 47        | Permutations II                                |                                          |
 | 53        | Maximum Subarray                               | 3 (close)                                |
