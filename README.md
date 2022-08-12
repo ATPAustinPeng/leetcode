@@ -21,6 +21,7 @@
 | 146       | LRU Cache                                      |                                          |
 | 204       | Count Primes                                   |                                          |
 | 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping) |
+| 206       | Reverse Linked List                            | 1 (super close, try recursively)         |
 | 217       | Contains Duplicate                             | 2 (unforgettable)                        |
 | 238       | Product of Array Except Self                   |                                          |
 | 283       | Move Zeroes                                    |                                          |
