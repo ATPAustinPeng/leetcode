@@ -56,6 +56,7 @@
 | 1099      | Two Sum Less Than K                            |                                                          |
 | 1249      | Minimum Remove to Make Valid Parentheses       |                                                          |
 | 1480      | Running Sum of 1D Array                        |                                                          |
+| 1743      | Restore the Array From Adjacent Pairs          | 1 (super close, just re-solve)                           |
 | 1762      | Buildings With an Ocean View                   |                                                          |
 | 1861      | Rotating the Box                               |                                                          |
 | 1878      | Get Biggest Three Rhombus Sums in a Grid       |                                                          |
