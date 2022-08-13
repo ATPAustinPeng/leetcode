@@ -37,7 +37,7 @@
 | 142       | Linked List Cycle II                           | 1 (super close, understand math with O(1) space solution |
 | 143       | Reorder List                                   |                                                          |
 | 146       | LRU Cache                                      |                                                          |
-| 204       | Count Primes                                   |                                                          |
+| 204       | Count Primes                                   | 1 (super close, don't forget how to implement sieve)     |
 | 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping)                 |
 | 206       | Reverse Linked List                            | 1 (super close, try recursively)                         |
 | 217       | Contains Duplicate                             | 2 (unforgettable)                                        |
@@ -49,17 +49,17 @@
 | 392       | Is Subsequence                                 | 1 (close, try dp solution)                               |
 | 400       | Nth Digit                                      |                                                          |
 | 443       | String Compression                             | 1 (super close)                                          |
-| 445       | Add Two Numbers II                             |                                                          |
-| 723       | Candy Crush                                    | 1 (close)                                                |
+| 445       | Add Two Numbers II                             | 1 (super close, remember the trick!)                     |
+| 723       | Candy Crush                                    | 1 (close, need clean implementation)                     |
 | 724       | Find Pivot Index                               |                                                          |
 | 876       | Middle of the Linked List                      | 1 (unforgettable)                                        |
-| 1099      | Two Sum Less Than K                            |                                                          |
+| 1099      | Two Sum Less Than K                            | 1 (super close, remember the trick!)                     |
 | 1249      | Minimum Remove to Make Valid Parentheses       |                                                          |
 | 1480      | Running Sum of 1D Array                        |                                                          |
-| 1743      | Restore the Array From Adjacent Pairs          | 1 (super close, just re-solve)                           |
+| 1743      | Restore the Array From Adjacent Pairs          | 1 (super close, graphs -> just re-solve)                 |
 | 1762      | Buildings With an Ocean View                   |                                                          |
-| 1861      | Rotating the Box                               |                                                          |
-| 1878      | Get Biggest Three Rhombus Sums in a Grid       |                                                          |
+| 1861      | Rotating the Box                               | 1 (super close, how to perform 90 degree array rotation) |
+| 1878      | Get Biggest Three Rhombus Sums in a Grid       | 1 (close)                                                |
 
 ### Problems Solved
 
