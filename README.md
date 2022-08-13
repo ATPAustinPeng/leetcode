@@ -1,5 +1,22 @@
 # leetcode
 
+## Lists To Do
+
+-   https://leetcode.com/company/capital-one/
+-   https://leetcode.com/company/akuna-capital/
+-   https://leetcode.com/company/apple/
+-   https://leetcode.com/company/microsoft/
+-   https://leetcode.com/problem-list/top-amazon-questions/
+-   https://leetcode.com/study-plan/data-structure/ (doing hard rn)
+-   https://leetcode.com/study-plan/leetcode-75 (doing easy rn, move to med then hard)
+-   https://leetcode.com/study-plan/algorithm/ (doing med rn, move to hard)
+-   https://leetcode.com/study-plan/dynamic-programming/ (doing I rn, move to II, III, IV)
+-   https://leetcode.com/study-plan/graph/ (doing I rn, move to II)
+-   https://leetcode.com/problem-list/top-interview-questions/
+-   https://leetcode.com/explore/featured/card/top-interview-questions-easy/
+-   https://leetcode.com/explore/featured/card/top-interview-questions-medium/
+-   https://leetcode.com/explore/featured/card/top-interview-questions-hard/
+
 ## Summer 2023 Internship & Full-Time Position Problems
 
 | Problem # | Problem Name                                   | # times completed (mastered)             |
@@ -31,6 +48,7 @@
 | 392       | Is Subsequence                                 | 1 (close, try dp solution)               |
 | 400       | Nth Digit                                      |                                          |
 | 445       | Add Two Numbers II                             |                                          |
+| 723       | Candy Crush                                    | 1 (close)                                |
 | 724       | Find Pivot Index                               |                                          |
 | 1099      | Two Sum Less Than K                            |                                          |
 | 1249      | Minimum Remove to Make Valid Parentheses       |                                          |
