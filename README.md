@@ -19,45 +19,46 @@
 
 ## Summer 2023 Internship & Full-Time Position Problems
 
-| Problem # | Problem Name                                   | # times completed (mastered)             |
-| --------- | ---------------------------------------------- | ---------------------------------------- |
-| 1         | Two Sum                                        |                                          |
-| 2         | Add Two Numbers                                |                                          |
-| 3         | Longest Substring Without Repeating Characters |                                          |
-| 8         | String to Integer (atoi)                       |                                          |
-| 13        | Roman to Integer                               |                                          |
-| 21        | Merge Two Sorted Lists                         | 2 (close, try recursive, try in-place)   |
-| 46        | Permutations                                   |                                          |
-| 47        | Permutations II                                |                                          |
-| 53        | Maximum Subarray                               | 3 (close)                                |
-| 91        | Decode Ways                                    |                                          |
-| 121       | Best Time to Buy and Sell Stock                |                                          |
-| 125       | Valid Palindrome                               |                                          |
-| 138       | Copy List with Random Pointer                  |                                          |
-| 143       | Reorder List                                   |                                          |
-| 146       | LRU Cache                                      |                                          |
-| 204       | Count Primes                                   |                                          |
-| 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping) |
-| 206       | Reverse Linked List                            | 1 (super close, try recursively)         |
-| 217       | Contains Duplicate                             | 2 (unforgettable)                        |
-| 238       | Product of Array Except Self                   |                                          |
-| 283       | Move Zeroes                                    |                                          |
-| 314       | Binary Tree Vertical Order Traversal           |                                          |
-| 325       | Maximum Size Subarray Sum Equals k             | 1 (not even close)                       |
-| 362       | Design Hit Counter                             |                                          |
-| 392       | Is Subsequence                                 | 1 (close, try dp solution)               |
-| 400       | Nth Digit                                      |                                          |
-| 443       | String Compression                             | 1 (super close)                          |
-| 445       | Add Two Numbers II                             |                                          |
-| 723       | Candy Crush                                    | 1 (close)                                |
-| 724       | Find Pivot Index                               |                                          |
-| 876       | Middle of the Linked List                      | 1 (unforgettable)                        |
-| 1099      | Two Sum Less Than K                            |                                          |
-| 1249      | Minimum Remove to Make Valid Parentheses       |                                          |
-| 1480      | Running Sum of 1D Array                        |                                          |
-| 1762      | Buildings With an Ocean View                   |                                          |
-| 1861      | Rotating the Box                               |                                          |
-| 1878      | Get Biggest Three Rhombus Sums in a Grid       |                                          |
+| Problem # | Problem Name                                   | # times completed (mastered)                             |
+| --------- | ---------------------------------------------- | -------------------------------------------------------- |
+| 1         | Two Sum                                        |                                                          |
+| 2         | Add Two Numbers                                |                                                          |
+| 3         | Longest Substring Without Repeating Characters |                                                          |
+| 8         | String to Integer (atoi)                       |                                                          |
+| 13        | Roman to Integer                               |                                                          |
+| 21        | Merge Two Sorted Lists                         | 2 (close, try recursive, try in-place)                   |
+| 46        | Permutations                                   |                                                          |
+| 47        | Permutations II                                |                                                          |
+| 53        | Maximum Subarray                               | 3 (close)                                                |
+| 91        | Decode Ways                                    |                                                          |
+| 121       | Best Time to Buy and Sell Stock                |                                                          |
+| 125       | Valid Palindrome                               |                                                          |
+| 138       | Copy List with Random Pointer                  |                                                          |
+| 142       | Linked List Cycle II                           | 1 (super close, understand math with O(1) space solution |
+| 143       | Reorder List                                   |                                                          |
+| 146       | LRU Cache                                      |                                                          |
+| 204       | Count Primes                                   |                                                          |
+| 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping)                 |
+| 206       | Reverse Linked List                            | 1 (super close, try recursively)                         |
+| 217       | Contains Duplicate                             | 2 (unforgettable)                                        |
+| 238       | Product of Array Except Self                   |                                                          |
+| 283       | Move Zeroes                                    |                                                          |
+| 314       | Binary Tree Vertical Order Traversal           |                                                          |
+| 325       | Maximum Size Subarray Sum Equals k             | 1 (not even close)                                       |
+| 362       | Design Hit Counter                             |                                                          |
+| 392       | Is Subsequence                                 | 1 (close, try dp solution)                               |
+| 400       | Nth Digit                                      |                                                          |
+| 443       | String Compression                             | 1 (super close)                                          |
+| 445       | Add Two Numbers II                             |                                                          |
+| 723       | Candy Crush                                    | 1 (close)                                                |
+| 724       | Find Pivot Index                               |                                                          |
+| 876       | Middle of the Linked List                      | 1 (unforgettable)                                        |
+| 1099      | Two Sum Less Than K                            |                                                          |
+| 1249      | Minimum Remove to Make Valid Parentheses       |                                                          |
+| 1480      | Running Sum of 1D Array                        |                                                          |
+| 1762      | Buildings With an Ocean View                   |                                                          |
+| 1861      | Rotating the Box                               |                                                          |
+| 1878      | Get Biggest Three Rhombus Sums in a Grid       |                                                          |
 
 ### Problems Solved
 
