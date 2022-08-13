@@ -47,6 +47,7 @@
 | 362       | Design Hit Counter                             |                                          |
 | 392       | Is Subsequence                                 | 1 (close, try dp solution)               |
 | 400       | Nth Digit                                      |                                          |
+| 443       | String Compression                             | 1 (super close)                          |
 | 445       | Add Two Numbers II                             |                                          |
 | 723       | Candy Crush                                    | 1 (close)                                |
 | 724       | Find Pivot Index                               |                                          |
