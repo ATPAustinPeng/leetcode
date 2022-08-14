@@ -38,6 +38,7 @@
 | 142       | Linked List Cycle II                           | 1 (super close, understand math with O(1) space solution |
 | 143       | Reorder List                                   |                                                          |
 | 146       | LRU Cache                                      |                                                          |
+| 200       | Number of Islands                              | 1 (super close, try bfs, union find)                     |
 | 204       | Count Primes                                   | 1 (super close, don't forget how to implement sieve)     |
 | 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping)                 |
 | 206       | Reverse Linked List                            | 1 (super close, try recursively)                         |
