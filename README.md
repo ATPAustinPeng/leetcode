@@ -53,6 +53,7 @@
 | 445       | Add Two Numbers II                             | 1 (super close, remember the trick!)                     |
 | 723       | Candy Crush                                    | 1 (close, need clean implementation)                     |
 | 724       | Find Pivot Index                               |                                                          |
+| 733       | Flood Fill                                     | 1 (unforgettable)                                        |
 | 876       | Middle of the Linked List                      | 1 (unforgettable)                                        |
 | 1099      | Two Sum Less Than K                            | 1 (super close, remember the trick!)                     |
 | 1249      | Minimum Remove to Make Valid Parentheses       |                                                          |
@@ -62,6 +63,25 @@
 | 1762      | Buildings With an Ocean View                   |                                                          |
 | 1861      | Rotating the Box                               | 1 (super close, how to perform 90 degree array rotation) |
 | 1878      | Get Biggest Three Rhombus Sums in a Grid       | 1 (close)                                                |
+
+### Problem Types
+
+-   data structure implementation
+    -   arraylist
+    -   linkedlist
+    -   bst
+    -   avl
+    -   heap
+    -   hashmap (linear probing, quadratic probing, open addressing, closed addressing)
+-   graphs
+    -   dfs, bfs, dijkstra, bellman-ford, prim, kruskal, dijkstra, a\*
+-   search
+    -   linear search
+    -   binary search
+-   traversal
+    -   linked list
+    -   tree (pre-order, in-order, post-order, level-order)
+    -   graph (dfs, bfs)
 
 ### Problems Solved
 
