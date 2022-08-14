@@ -1,5 +1,6 @@
 /* 
     56. Merge Intervals
+    
     Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
     
     Example 1:
@@ -19,27 +20,70 @@
 */
 public class Problem 56 {
     public int[][] merge(int[][] intervals) {
-        // sort the array by x[0] then by y[0] if the x[0]'s are equal
-        Arrays.sort(intervals, (x, y) -> Integer.compare(x[0], y[0]));
-
-        LinkedList<int[]> solution = new LinkedList<>();
-
-        // loop through sorted intervals
-        // if solution set is empty, add the first interval we see
-        // OR add the first interval where the first value > solution.getLast()'s second value
-            // ex. solution = {[1, 2], [3, 15]}, arr = [29, 50]
-            // because 29 > 15, we want to add the interval because no merging is needed
-        // otherwise
-            // if the interval's second value > solution.getLast()[1], update solution.getLast()[1] with the max(interval[1], solution.getLast()[1])
-            // ex. solution = {[1, 2], [3, 15]}, arr = [10, 30]
-            // because 30 > 15, we want to merge interval to [3, 30]
-        for (int[] arr : intervals) {
-            if (solution.isEmpty() || solution.getLast()[1] < arr[0]) {
-                solution.add(arr);
+        // sort intervals using first key
+        // iterate over sorted intervals
+            // if mergedIntervals is empty
+                // add the first interval
+            // if mergedIntervals is not empty
+                // if the lastInterval's end value > currInterval's start
+                    // lastInterval's end value = max(lastInterval's end, currInterval's end)
+        // BEST
+        quicksort(intervals, 0, intervals.length - 1);
+        
+        // BETTER
+        // Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        
+        // BAD: so long
+        // Arrays.sort(intervals, new Comparator<int[]>() {
+        //     public int compare(int[] a, int[] b) {
+        //         // if a[0] < b[0] -> return -
+        //         // if a[0] == b[0] -> return 0
+        //         // if a[0] > b[0] -> return +
+        //         return a[0] - b[0];
+        //     }
+        // });
+        
+        int index = 0;
+        LinkedList<int[]> mergedIntervals = new LinkedList<>();
+        mergedIntervals.add(intervals[0]);
+            
+        
+        for (int i = 1; i < intervals.length; i++) {
+            int prevEnd = mergedIntervals.getLast()[1];
+                
+            int currStart = intervals[i][0];
+            int currEnd = intervals[i][1];
+            
+            if (prevEnd >= currStart) {
+                mergedIntervals.getLast()[1] = Math.max(prevEnd, currEnd);
             } else {
-                solution.getLast()[1] = Math.max(arr[1], solution.getLast()[1]);
+                mergedIntervals.add(intervals[i]);
             }
         }
-        return solution.toArray(new int[solution.size()][]);
+        
+        return mergedIntervals.toArray(new int[mergedIntervals.size()][]);
+    }
+    
+    private void quicksort(int[][] nums, int start, int end) {
+        if (start >= end) return;
+        int l = start;
+        int r = end;
+        int pivot = nums[end][0];
+        while (l < r) {
+            while (l < r && nums[l][0] <= pivot) 
+                l++;
+            while (l < r && nums[r][0] >= pivot)
+                r--;
+            swap(nums,l,r);
+        }
+        swap(nums,l,end);
+        quicksort(nums,l+1,end);
+        quicksort(nums,start,l-1);
+    }
+
+    private void swap(int[][] arr, int a, int b) {
+        int[] tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
     }
 }
