@@ -52,6 +52,7 @@
 | 400       | Nth Digit                                      |                                                          |
 | 443       | String Compression                             | 1 (super close)                                          |
 | 445       | Add Two Numbers II                             | 1 (super close, remember the trick!)                     |
+| 695       | Max Area of Island                             | 1 (close, try implementation again)                      |
 | 723       | Candy Crush                                    | 1 (close, need clean implementation)                     |
 | 724       | Find Pivot Index                               |                                                          |
 | 733       | Flood Fill                                     | 1 (unforgettable)                                        |
