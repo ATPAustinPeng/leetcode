@@ -23,17 +23,38 @@
     1 <= n <= 45
  */
 public class Problem70 {
+    // DP
     public int climbStairs(int n) {
-        int[] dp = new int[n + 2];
-        return climbStairsH(dp, n);
-    }
-
-    public int climbStairsH(int[] dp, int n) {
+        // dp array has size n + 1
+        // dp[0] = 1, dp[1] = 2, dp[i] = dp[i - 1] + dp[i - 2]
+        // Note: i - 1 = n
         if (n <= 2) {
-            dp[n] = n;
-        } else if (dp[n] == 0) {
-            dp[n] = climbStairsH(dp, n - 1) + climbStairsH(dp, n - 2);
+            return n;
         }
-        return dp[n];
+        
+        int[] dp = new int[n];
+        dp[0] = 1;
+        dp[1] = 2;
+        
+        for (int i = 2; i < n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        
+        return dp[n - 1];
     }
+    
+    // RECURSIVE
+    // public int climbStairs(int n) {
+    //     int[] dp = new int[n + 2];
+    //     return climbStairsH(dp, n);
+    // }
+
+    // public int climbStairsH(int[] dp, int n) {
+    //     if (n <= 2) {
+    //         dp[n] = n;
+    //     } else if (dp[n] == 0) {
+    //         dp[n] = climbStairsH(dp, n - 1) + climbStairsH(dp, n - 2);
+    //     }
+    //     return dp[n];
+    // }
 }

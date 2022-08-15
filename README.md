@@ -32,6 +32,7 @@
 | 47        | Permutations II                                |                                                             |
 | 53        | Maximum Subarray                               | 3 (close)                                                   |
 | 56        | Merge Intervals                                | 2 (super close, check implementation & components solution) |
+| 70        | Climbing Stairs                                | 2 (unforgettable)                                           |
 | 74        | Search a 2D Matrix                             | 1 (unforgettable)                                           |
 | 91        | Decode Ways                                    |                                                             |
 | 121       | Best Time to Buy and Sell Stock                |                                                             |
