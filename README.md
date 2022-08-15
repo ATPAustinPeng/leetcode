@@ -41,6 +41,7 @@
 | 142       | Linked List Cycle II                           | 1 (super close, understand math with O(1) space solution    |
 | 143       | Reorder List                                   |                                                             |
 | 146       | LRU Cache                                      |                                                             |
+| 198       | House Robber                                   | 1 (unforgettable)                                           |
 | 200       | Number of Islands                              | 1 (super close, try bfs, union find)                        |
 | 204       | Count Primes                                   | 1 (super close, don't forget how to implement sieve)        |
 | 205       | Isomorphic Strings                             | 1 (close, dont forget about 1-1 mapping)                    |
@@ -97,7 +98,6 @@
 | Problem # | Problem Name                         | Problem Type        | Redo? |
 | --------- | ------------------------------------ | ------------------- | ----- |
 | 33        | Search in Rotated Sorted Array       | array               | yes   |
-| 70        | Climbing Stairs                      | dynamic programming | no    |
 | 152       | Maximum Product Subarray             | array               | yes   |
 | 153       | Find Minimum in Rotated Sorted Array | array               | no    |
 | 217       | Contains Duplicate                   | array, hashset      | no    |
