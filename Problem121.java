@@ -23,22 +23,23 @@
 
 public class Problem121 {
 	public int maxProfit(int[] prices) {
-        // track runningMin, always recalculate difference and save maxDifference
-        // if difference is negative, don't update
-        if (prices.length < 1) {
-            return 0;
-        }
+        int maxProfit = 0;
         
         int runningMin = prices[0];
-        int res = 0;
-        
         for (int i = 1; i < prices.length; i++) {
-            if (prices[i] < runningMin) {
-                runningMin = prices[i];
-            } else if (prices[i] - runningMin > res) {
-                res = prices[i] - runningMin;
+            int price = prices[i];
+            if (price < runningMin) {
+                runningMin = price;
+                continue;
             }
+            
+            if (price - runningMin > maxProfit) {
+                maxProfit = price - runningMin;
+            }
+            // runningMin = Math.min(prices[i], runningMin);
+            // maxProfit = Math.max(prices[i] - runningMin, maxProfit);
         }
-        return res;
+        
+        return maxProfit;
     }
 }

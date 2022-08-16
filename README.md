@@ -35,7 +35,7 @@
 | 70        | Climbing Stairs                                | 2 (unforgettable)                                              |
 | 74        | Search a 2D Matrix                             | 1 (unforgettable)                                              |
 | 91        | Decode Ways                                    |                                                                |
-| 121       | Best Time to Buy and Sell Stock                |                                                                |
+| 121       | Best Time to Buy and Sell Stock                | 3 (unforgettable)                                              |
 | 125       | Valid Palindrome                               |                                                                |
 | 138       | Copy List with Random Pointer                  |                                                                |
 | 142       | Linked List Cycle II                           | 1 (super close, understand math with O(1) space solution       |
