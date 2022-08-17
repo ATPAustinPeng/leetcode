@@ -30,7 +30,7 @@
 | 26        | Remove Duplicates from Sorted Array            | 1 (unforgettable)                                              |
 | 46        | Permutations                                   |                                                                |
 | 47        | Permutations II                                |                                                                |
-| 53        | Maximum Subarray                               | 3 (close)                                                      |
+| 53        | Maximum Subarray                               | 4 (super close, remember how to track the current subarray)    |
 | 56        | Merge Intervals                                | 2 (super close, check implementation & components solution)    |
 | 70        | Climbing Stairs                                | 2 (unforgettable)                                              |
 | 74        | Search a 2D Matrix                             | 1 (unforgettable)                                              |
@@ -56,6 +56,7 @@
 | 384       | Shuffle An Array                               | 1 (super close, don't forget about how copying pointers works) |
 | 392       | Is Subsequence                                 | 1 (close, try dp solution)                                     |
 | 400       | Nth Digit                                      |                                                                |
+| 409       | Longest Palindrome                             | 1 (super close, use static array!)                             |
 | 443       | String Compression                             | 1 (super close)                                                |
 | 445       | Add Two Numbers II                             | 1 (super close, remember the trick!)                           |
 | 695       | Max Area of Island                             | 1 (close, try implementation again)                            |
