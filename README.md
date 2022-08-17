@@ -17,6 +17,10 @@
 -   https://leetcode.com/explore/featured/card/top-interview-questions-medium/
 -   https://leetcode.com/explore/featured/card/top-interview-questions-hard/
 
+## Curiosity
+
+-   when to use LinkedList vs ArrayList backing for Stack and Queue (tree traversal)
+
 ## Summer 2023 Internship & Full-Time Position Problems
 
 | Problem # | Problem Name                                   | # times completed (mastered)                                                           |
@@ -35,6 +39,7 @@
 | 70        | Climbing Stairs                                | 2 (unforgettable)                                                                      |
 | 74        | Search a 2D Matrix                             | 1 (unforgettable)                                                                      |
 | 91        | Decode Ways                                    |                                                                                        |
+| 102       | Binary Tree Level Order Traversal              | 1 (super close, look at recursive sol, do space efficient bfs traversal)               |
 | 121       | Best Time to Buy and Sell Stock                | 3 (unforgettable)                                                                      |
 | 125       | Valid Palindrome                               |                                                                                        |
 | 138       | Copy List with Random Pointer                  |                                                                                        |
