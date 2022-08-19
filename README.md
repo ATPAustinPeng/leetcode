@@ -39,6 +39,7 @@
 | 70        | Climbing Stairs                                | 2 (unforgettable)                                                                          |
 | 74        | Search a 2D Matrix                             | 1 (unforgettable)                                                                          |
 | 91        | Decode Ways                                    |                                                                                            |
+| 98        | Validate Binary Search Tree                    | 1 (close, write out the case ranges)                                                       |
 | 102       | Binary Tree Level Order Traversal              | 1 (super close, look at recursive sol, do space efficient bfs traversal)                   |
 | 121       | Best Time to Buy and Sell Stock                | 3 (unforgettable)                                                                          |
 | 125       | Valid Palindrome                               |                                                                                            |
