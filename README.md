@@ -6,6 +6,9 @@
 -   https://leetcode.com/company/akuna-capital/
 -   https://leetcode.com/company/apple/
 -   https://leetcode.com/company/microsoft/
+-   https://leetcode.com/problem-list/top-interview-questions/
+-   https://leetcode.com/problem-list/top-google-questions/
+-   https://leetcode.com/problem-list/top-microsoft-questions/
 -   https://leetcode.com/problem-list/top-amazon-questions/
 -   https://leetcode.com/study-plan/data-structure/ (doing hard rn)
 -   https://leetcode.com/study-plan/leetcode-75 (doing easy rn, move to med then hard)
@@ -32,6 +35,7 @@
 | 13        | Roman to Integer                               |                                                                                            |
 | 21        | Merge Two Sorted Lists                         | 2 (close, try recursive, try in-place)                                                     |
 | 26        | Remove Duplicates from Sorted Array            | 1 (unforgettable)                                                                          |
+| 42        | Trapping Rain Water                            | 1 (not close, can brute force, understand dp, stack, or 2 ptr solution)                    |
 | 46        | Permutations                                   |                                                                                            |
 | 47        | Permutations II                                |                                                                                            |
 | 53        | Maximum Subarray                               | 4 (super close, remember how to track the current subarray)                                |
@@ -67,6 +71,7 @@
 | 409       | Longest Palindrome                             | 1 (super close, use static array!)                                                         |
 | 443       | String Compression                             | 1 (super close)                                                                            |
 | 445       | Add Two Numbers II                             | 1 (super close, remember the trick!)                                                       |
+| 509       | Fibonacci Number                               | 1 (super close, use dp table to save computed fibs, recursion to find)                     |
 | 589       | N-ary Tree Preorder Traversal                  | 1 (super close, do recursive solution, realize dfs uses stack does reverse post order)     |
 | 695       | Max Area of Island                             | 1 (close, try implementation again)                                                        |
 | 704       | Binary Search                                  | 1 (unforgettable, remember to think)                                                       |
@@ -114,7 +119,6 @@
 | 152       | Maximum Product Subarray             | array               | yes   |
 | 153       | Find Minimum in Rotated Sorted Array | array               | no    |
 | 217       | Contains Duplicate                   | array, hashset      | no    |
-| 509       | Fibonacci Number                     | dynamic programming | no    |
 | 746       | Min Cost Climbing Stairs             | dynamic programming | no    |
 | 844       | Backspace String Compare             | stack, pointer      | no    |
 | 1137      | N-th Tribonacci Number               | dynamic programming | no    |
