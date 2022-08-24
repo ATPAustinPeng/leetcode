@@ -39,6 +39,7 @@
 | 42        | Trapping Rain Water                            | 1 (not close, can brute force, understand dp, stack, or 2 ptr solution)                    |
 | 46        | Permutations                                   |                                                                                            |
 | 47        | Permutations II                                |                                                                                            |
+| 49        | Group Anagrams                                 | 1 (super close, try categorize by char count)                                              |
 | 53        | Maximum Subarray                               | 4 (super close, remember how to track the current subarray)                                |
 | 56        | Merge Intervals                                | 2 (super close, check implementation & components solution)                                |
 | 70        | Climbing Stairs                                | 2 (unforgettable)                                                                          |
