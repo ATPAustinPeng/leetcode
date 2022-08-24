@@ -68,6 +68,7 @@
 | 362       | Design Hit Counter                             |                                                                                            |
 | 384       | Shuffle An Array                               | 1 (super close, don't forget about how copying pointers works)                             |
 | 392       | Is Subsequence                                 | 1 (close, try dp solution)                                                                 |
+| 399       | Evaluate Division                              | 1 (close, retry implementation)                                                            |
 | 400       | Nth Digit                                      |                                                                                            |
 | 409       | Longest Palindrome                             | 1 (super close, use static array!)                                                         |
 | 443       | String Compression                             | 1 (super close)                                                                            |
