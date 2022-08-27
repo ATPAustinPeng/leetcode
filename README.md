@@ -83,7 +83,7 @@
 | 733       | Flood Fill                                     | 1 (unforgettable)                                                                          |
 | 876       | Middle of the Linked List                      | 1 (unforgettable)                                                                          |
 | 1099      | Two Sum Less Than K                            | 1 (super close, remember the trick!)                                                       |
-| 1249      | Minimum Remove to Make Valid Parentheses       |                                                                                            |
+| 1249      | Minimum Remove to Make Valid Parentheses       | 2 (super close, remember order of what to do, first remove ')' then '(')                   |
 | 1254      | Number of Closed Islands                       | 1 (super close, remember edge case)                                                        |
 | 1480      | Running Sum of 1D Array                        |                                                                                            |
 | 1658      | Minimum Operations to Reduce X to Zero         | 1 (super close, note input difference between 1658 & 325                                   |

@@ -29,37 +29,91 @@
 */
 
 public class Problem1249 {
-    public String minRemoveToMakeValid(String s) {
+    public String minRemoveToMakeValid(String str) {
+        // concept:
+        // remove unncessary open parentheses then illegal closed parentheses
+        // if there are remaining extra closed parentheses, you can start removing from the right to left
+
         // 2 pass solution
         // first pass, remove all invalid ')'
         // second pass, remove all invalid '(' (remove from right to left)
-        int counter = 0;
         
         StringBuilder sb = new StringBuilder();
+        int extraOpen = 0;
         
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (c == '(') {
-                counter++;
-            } else if (c == ')') {
-                counter--;
+        // remove all illegal closed parentheses
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            
+            // if char not '(' or ')'
+            if (c != '(' && c != ')') {
+                sb.append(c);
+                continue;
             }
             
-            if (counter < 0) {
-                counter++;
-            } else {
+            // if char is '(', add to sb & increase counter
+            if (c == '(') {
+                sb.append(c);
+                extraOpen++;
+            }
+            
+            // if char is ')'
+                // if counter > 0, add to sb & decrease counter
+                // if counter <= 0, dont add
+            if (c == ')') {
+                if (extraOpen == 0) {
+                    continue;
+                }
+                extraOpen--;
                 sb.append(c);
             }
         }
         
+        // remove any extra open parentheses right to left
+        // StringBuilder sb2 = new StringBuilder();
         for (int i = sb.length() - 1; i >= 0; i--) {
             char c = sb.charAt(i);
-            if (c == '(' && counter > 0) {
-                sb.deleteCharAt(i);
-                counter--;
+            
+            if (c == '(') {
+                if (extraOpen > 0) {
+                    extraOpen--;
+                    sb.deleteCharAt(i);
+                    continue;
+                }
             }
         }
         
         return sb.toString();
     }
+
+    // public String minRemoveToMakeValid(String s) {
+    //     int counter = 0;
+        
+    //     StringBuilder sb = new StringBuilder();
+        
+    //     for (int i = 0; i < s.length(); i++) {
+    //         char c = s.charAt(i);
+    //         if (c == '(') {
+    //             counter++;
+    //         } else if (c == ')') {
+    //             counter--;
+    //         }
+            
+    //         if (counter < 0) {
+    //             counter++;
+    //         } else {
+    //             sb.append(c);
+    //         }
+    //     }
+        
+    //     for (int i = sb.length() - 1; i >= 0; i--) {
+    //         char c = sb.charAt(i);
+    //         if (c == '(' && counter > 0) {
+    //             sb.deleteCharAt(i);
+    //             counter--;
+    //         }
+    //     }
+        
+    //     return sb.toString();
+    // }
 }
