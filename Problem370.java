@@ -39,18 +39,24 @@ public class Problem370 {
         
         int[] result = new int[length];
         
+        // iterate through updates
         for (int[] update : updates) {
             int left = update[0];
             int right = update[1];
             int amt = update[2];
             
+            // mark the beginning of the update (for prefix sum)
+            // Note: prefix sum would perform '+amt' until the below 'if statement' is reached
             result[left] += amt;
             
+            // mark the end of the update (for prefix sum)
+            // Note: prefix sum would already be running with '+amt' from start of update, when end is reached do '-amt'
             if (right + 1 < length) {
                 result[right + 1] -= amt;
             }
         }
         
+        // leverage prefix sum to get the final answer
         for (int i = 1; i < length; i++) {
             result[i] += result[i - 1];
         }
