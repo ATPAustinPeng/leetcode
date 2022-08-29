@@ -90,6 +90,7 @@
 | 1249      | Minimum Remove to Make Valid Parentheses       | 2                 | (super close, remember order of what to do, first remove ')' then '(')                   |
 | 1254      | Number of Closed Islands                       | 1                 | (super close, remember edge case)                                                        |
 | 1360      | Number of Days Between Two Dates               | 1                 | (super close, try implementing)                                                          |
+| 1361      | Validate Binary Tree Nodes                     | 1                 | (not even close, implementation issue understand the edge cases)                         |
 | 1480      | Running Sum of 1D Array                        |                   |                                                                                          |
 | 1658      | Minimum Operations to Reduce X to Zero         | 1                 | (super close, note input difference between 1658 & 325                                   |
 | 1743      | Restore the Array From Adjacent Pairs          | 1                 | (super close, graphs -> just re-solve)                                                   |
