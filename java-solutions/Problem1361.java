@@ -1,6 +1,6 @@
 /*
     1361. Validate Binary Tree Nodes
-    
+
     You have n binary tree nodes numbered from 0 to n - 1 where node i has two children leftChild[i] and rightChild[i], return true if and only if all the given nodes form exactly one valid binary tree.
     If node i has no left child then leftChild[i] will equal -1, similarly for the right child.
     Note that the nodes have no values and that we only use the node numbers in this problem.
@@ -35,13 +35,12 @@ public class Problem1361 {
         int potentialRoot = -2;
         for (int i = 0; i < n; i++) {
             if (!nodes.contains(i)) {
-                // potentialRoot = i;
                 if (potentialRoot == -2) {
                     potentialRoot = i;
                 } else {
+                    // multiple roots
                     return false;
                 }
-                // break;
             }
         }
         
@@ -60,7 +59,7 @@ public class Problem1361 {
             int node = q.remove();
             
             if (visited.contains(node)) {
-                // not a tree
+                // multiple parents
                 return false;
                 
             }
@@ -81,9 +80,107 @@ public class Problem1361 {
 
         // if visited set contains n nodes, there are no cycles
         if (visited.size() != n) {
+            // a cycle exists
             return false;
         }
 
         return true;
     }
+//     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
+//         // build tree
+//             // check: no nodes have 2 parents
+//         Map<Integer, List<Integer>> parentToChild = new HashMap<>();
+//         Map<Integer, List<Integer>> childToParent = new HashMap<>();
+        
+//         for (int i = 0; i < n; i++) {
+//             int left = leftChild[i];
+//             int right = rightChild[i];
+            
+//             // if parent doesn't exist, add it
+//             if (!parentToChild.containsKey(i)) {
+//                 parentToChild.put(i, new ArrayList<>());
+//             }
+            
+//             // if left is not null, add it
+//             if (left != -1) {
+//                 parentToChild.get(i).add(left);
+                
+//                 // if left doesn't exist, add parent
+//                 // else return false (because it has 2 parents)
+//                 if (!childToParent.containsKey(left)) {
+//                     childToParent.put(left, new ArrayList<>());
+//                     childToParent.get(left).add(i);
+//                 } else {
+//                     System.out.println("multiple parent");
+//                     return false;
+//                 }
+//             }
+            
+//             // if right is not null, add it
+//             if (right != -1) {
+//                 parentToChild.get(i).add(right);
+                
+//                 // if right doesn't exist, add parent
+//                 // else return false (because it has 2 parents)
+//                 if (!childToParent.containsKey(right)) {
+//                     childToParent.put(right, new ArrayList<>());
+//                     childToParent.get(right).add(i);
+//                 } else {
+//                     System.out.println("multiple parent");
+//                     return false;
+//                 }
+//             }    
+//         }
+        
+//         int potentialRoot = -2;
+//         for (int i = 0; i < n; i++) {
+//                 // if not a child node
+//                 if (!childToParent.containsKey(i)) {
+//                     // if potentialRoot not found, i is the root
+//                     // else return false (multiple roots)
+//                     if (potentialRoot == -2) {
+//                         potentialRoot = i;
+//                     } else {
+//                         System.out.println("multiple root");
+//                         return false;
+//                     }
+//                 }
+//             }
+            
+//             // there is no root
+//             if (potentialRoot == -2) {
+//                 System.out.println("no root");
+//                 return false;
+//             }
+            
+//             // perform bfs
+//             Set<Integer> visited = new HashSet<>();
+//             Queue<Integer> q = new LinkedList<>();
+            
+//             // add root node
+//             q.add(potentialRoot);
+//             // visited.add(0);
+            
+//             while (!q.isEmpty()) {
+//                 int node = q.remove();
+//                 visited.add(node);
+                
+//                 List<Integer> neighbors = parentToChild.get(node);
+                
+//                 // add left & right children into queue
+//                 for (int i = 0; i < neighbors.size(); i++) {
+//                     q.add(neighbors.get(i));
+//                 }
+//             }
+            
+//             // if visited set contains n nodes, there are no cycles
+//             if (visited.size() != n) {
+//                 System.out.println(visited.size());
+//                 System.out.println("cycle found");
+//                 return false;
+//             }
+            
+            
+//             return true;
+//     }
 }
