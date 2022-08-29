@@ -27,18 +27,17 @@
 
 public class Problem1 {
 	public int[] twoSum(int[] nums, int target) {
-        // store complement of current index
-        // access using current index value
-        Map<Integer, Integer> hm = new HashMap<>();
+        // (amt gotten from nums, index)
+        Map<Integer, Integer> hmap = new HashMap<>();
         
         for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
-            if (hm.containsKey(nums[i])) {
-                return new int[] {hm.get(nums[i]), i};
-            }
-            hm.put(complement, i);
+            // if the amt needed was found before
+            if (hmap.containsKey(target - nums[i])) {
+                return new int[] {i, hmap.get(target - nums[i])};
+            } else {
+                hmap.put(nums[i], i);    
+            }           
         }
-        
-        return new int[] {Integer.MIN_VALUE};
+        return new int[] {-1, -1};
     }
 }

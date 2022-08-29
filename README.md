@@ -28,7 +28,7 @@
 
 | Problem # | Problem Name                                   | # times completed | tips                                                                                     |
 | --------- | ---------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------- |
-| 1         | Two Sum                                        |                   |                                                                                          |
+| 1         | Two Sum                                        | 4                 | unforgettable (choose what you want to store in your hashmap)                            |
 | 2         | Add Two Numbers                                |                   |                                                                                          |
 | 3         | Longest Substring Without Repeating Characters |                   |                                                                                          |
 | 8         | String to Integer (atoi)                       |                   |                                                                                          |
