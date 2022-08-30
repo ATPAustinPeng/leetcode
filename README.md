@@ -62,6 +62,7 @@
 | 217       | Contains Duplicate                             | 2                 | (unforgettable)                                                                          |
 | 235       | Lowest Common Ancestor of a Binary Search Tree | 1                 | (super close, determine the cases to solve)                                              |
 | 238       | Product of Array Except Self                   |                   |                                                                                          |
+| 259       | 3Sum Smaller                                   | 1                 | (super close, remember the trick -> sort to allow 2 pointers)                            |
 | 278       | First Bad Version                              | 1                 | (super close, note why returning left ptr works & mid ptr calculation for overflow case) |
 | 283       | Move Zeroes                                    |                   |                                                                                          |
 | 314       | Binary Tree Vertical Order Traversal           |                   |                                                                                          |
