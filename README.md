@@ -46,6 +46,7 @@
 | 70        | Climbing Stairs                                     | 2                 | (unforgettable)                                                                        |
 | 74        | Search a 2D Matrix                                  | 1                 | (unforgettable)                                                                        |
 | 91        | Decode Ways                                         |                   |                                                                                        |
+| 94        | Binary Tree Inorder Traversal                       | 1                 | (unforgettable)                                                                        |
 | 98        | Validate Binary Search Tree                         | 1                 | (close, write out the case ranges)                                                     |
 | 102       | Binary Tree Level Order Traversal                   | 1                 | (super close, look at recursive sol, do space efficient bfs traversal)                 |
 | 104       | Maximum Depth of Binary Tree                        | 1                 | (unforgettable)                                                                        |
