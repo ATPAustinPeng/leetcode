@@ -42,6 +42,7 @@
 | 49        | Group Anagrams                                      | 1                 | (super close, try categorize by char count)                                            |
 | 53        | Maximum Subarray                                    | 4                 | (super close, remember how to track the current subarray)                              |
 | 56        | Merge Intervals                                     | 2                 | (super close, check implementation & components solution)                              |
+| 66        | Plus One                                            | 1                 | (super close, don't mess up the carry...)                                              |
 | 70        | Climbing Stairs                                     | 2                 | (unforgettable)                                                                        |
 | 74        | Search a 2D Matrix                                  | 1                 | (unforgettable)                                                                        |
 | 91        | Decode Ways                                         |                   |                                                                                        |
