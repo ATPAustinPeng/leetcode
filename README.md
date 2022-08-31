@@ -27,7 +27,7 @@
 ## Summer 2023 Internship & Full-Time Position Problems
 
 | Problem # | Problem Name                                        | # times completed | tips                                                                                   |
-| --------- | --------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------- | --- |
+| --------- | --------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------- |
 | 1         | Two Sum                                             | 4                 | unforgettable (choose what you want to store in your hashmap)                          |
 | 2         | Add Two Numbers                                     |                   |                                                                                        |
 | 3         | Longest Substring Without Repeating Characters      |                   |                                                                                        |
@@ -63,7 +63,8 @@
 | 235       | Lowest Common Ancestor of a Binary Search Tree      | 1                 | (super close, determine the cases to solve)                                            |
 | 238       | Product of Array Except Self                        |                   |                                                                                        |
 | 239       | Sliding Window Maximum                              | 1                 | (close, remember deque implementation, try dp solution)                                |
-| 244       | Shortest Word Distance II                           | 1                 | (super close, remember the case where you have same words)                             |     |
+| 242       | Valid Anagram                                       | 1                 | (unforgettable)                                                                        |
+| 244       | Shortest Word Distance II                           | 1                 | (super close, remember the case where you have same words)                             |
 | 259       | 3Sum Smaller                                        | 1                 | (super close, remember the trick -> sort to allow 2 pointers)                          |
 | 278       | First Bad Version                                   | 1                 | (super close, why returning left ptr works & mid ptr calculation for overflow case)    |
 | 283       | Move Zeroes                                         |                   |                                                                                        |
