@@ -67,6 +67,7 @@
 | 242       | Valid Anagram                                       | 1                 | (unforgettable)                                                                        |
 | 244       | Shortest Word Distance II                           | 1                 | (super close, remember the case where you have same words)                             |
 | 259       | 3Sum Smaller                                        | 1                 | (super close, remember the trick -> sort to allow 2 pointers)                          |
+| 268       | Missing Number                                      | 1                 | (unforgettable, n(n + 1)/2 math trick)                                                 |
 | 278       | First Bad Version                                   | 1                 | (super close, why returning left ptr works & mid ptr calculation for overflow case)    |
 | 283       | Move Zeroes                                         |                   |                                                                                        |
 | 314       | Binary Tree Vertical Order Traversal                |                   |                                                                                        |
