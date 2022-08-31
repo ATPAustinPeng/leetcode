@@ -84,6 +84,7 @@
 | 723       | Candy Crush                                         | 1                 | (close, need clean implementation)                                                     |
 | 724       | Find Pivot Index                                    |                   |                                                                                        |
 | 733       | Flood Fill                                          | 1                 | (unforgettable)                                                                        |
+| 744       | Find Smallest Letter Greater Than Target            | 1                 | (super close, remember you can use mod for loop around)                                |
 | 876       | Middle of the Linked List                           | 1                 | (unforgettable)                                                                        |
 | 910       | Smallest Range II                                   | 1                 | (not even close, do not understand the comparison)                                     |
 | 974       | Subarray Sums Divisible by K                        | 1                 | (super close, remember the math trick, do an example, POST SOLUTION)                   |
