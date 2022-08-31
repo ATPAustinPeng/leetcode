@@ -72,6 +72,7 @@
 | 362       | Design Hit Counter                                  |                   |                                                                                        |
 | 370       | Range Addition                                      | 1                 | (super close, remember to how cache and leverage prefix sum)                           |
 | 384       | Shuffle An Array                                    | 1                 | (super close, don't forget about how copying pointers works)                           |
+| 387       | First Unique Character in a String                  | 1                 | (super close, know to use hashmap, but iterate string again to find first)             |
 | 392       | Is Subsequence                                      | 1                 | (close, try dp solution)                                                               |
 | 399       | Evaluate Division                                   | 1                 | (close, retry implementation)                                                          |
 | 400       | Nth Digit                                           |                   |                                                                                        |
