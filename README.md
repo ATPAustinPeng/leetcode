@@ -48,6 +48,7 @@
 | 91        | Decode Ways                                         |                   |                                                                                        |
 | 98        | Validate Binary Search Tree                         | 1                 | (close, write out the case ranges)                                                     |
 | 102       | Binary Tree Level Order Traversal                   | 1                 | (super close, look at recursive sol, do space efficient bfs traversal)                 |
+| 104       | Maximum Depth of Binary Tree                        | 1                 | (unforgettable)                                                                        |
 | 121       | Best Time to Buy and Sell Stock                     | 4                 | (unforgettable)                                                                        |
 | 125       | Valid Palindrome                                    |                   |                                                                                        |
 | 138       | Copy List with Random Pointer                       |                   |                                                                                        |
