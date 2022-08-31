@@ -58,6 +58,7 @@
 | 146       | LRU Cache                                           |                   |                                                                                        |
 | 155       | Min Stack                                           | 1                 | (close, intricacies on how to track min & empty stack case)                            |
 | 169       | Majority Element                                    | 1                 | (super close, remember O(1) space sol, use voting & track previousIndex)               |
+| 171       | Excel Sheet Column Number                           | 1                 | (unforgettable)                                                                        |
 | 198       | House Robber                                        | 1                 | (unforgettable)                                                                        |
 | 200       | Number of Islands                                   | 1                 | (super close, try bfs, union find)                                                     |
 | 204       | Count Primes                                        | 1                 | (super close, don't forget how to implement sieve)                                     |
