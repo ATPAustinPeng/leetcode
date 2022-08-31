@@ -69,6 +69,7 @@
 | 283       | Move Zeroes                                         |                   |                                                                                        |
 | 314       | Binary Tree Vertical Order Traversal                |                   |                                                                                        |
 | 325       | Maximum Size Subarray Sum Equals k                  | 1                 | (not even close)                                                                       |
+| 344       | Reverse String                                      | 1                 | (unforgettable)                                                                        |
 | 362       | Design Hit Counter                                  |                   |                                                                                        |
 | 370       | Range Addition                                      | 1                 | (super close, remember to how cache and leverage prefix sum)                           |
 | 384       | Shuffle An Array                                    | 1                 | (super close, don't forget about how copying pointers works)                           |
