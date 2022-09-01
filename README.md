@@ -45,7 +45,7 @@
 | 66        | Plus One                                            | 1                 | (super close, don't mess up the carry...)                                              |
 | 70        | Climbing Stairs                                     | 2                 | (unforgettable)                                                                        |
 | 74        | Search a 2D Matrix                                  | 1                 | (unforgettable)                                                                        |
-| 91        | Decode Ways                                         |                   |                                                                                        |
+| 91        | Decode Ways                                         | 2                 | (super close, remember single (dp[i - 1]) vs double digit (dp[i - 2]) handling         |
 | 94        | Binary Tree Inorder Traversal                       | 1                 | (unforgettable)                                                                        |
 | 98        | Validate Binary Search Tree                         | 1                 | (close, write out the case ranges)                                                     |
 | 102       | Binary Tree Level Order Traversal                   | 1                 | (super close, look at recursive sol, do space efficient bfs traversal)                 |

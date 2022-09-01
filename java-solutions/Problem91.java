@@ -36,33 +36,69 @@
 */
 public class Problem91 {
     public int numDecodings(String s) {
-        // dp[0] = 1
-        // if s[0] != 0, dp[1] = 1
-        // else return 0
-        
-        // if single digit decodes (aka s[i] != 0), dp[i] = dp[i - 1]
-        // if double digit decodes (aka 10 ~ 26), dp[i] += dp[i - 2]
-        
-        if (s.length() < 1 || s.charAt(0) == '0') {
-            return 0;
+        int m = s.length();
+    
+        if (m < 1) {
+            return 1;
         }
-        
-        int[] dp = new int[s.length() + 1];
+
+        // dp[0] is filler
+        // dp[i + 1] refers to relation with message[i]
+        int[] dp = new int[m + 1];
         dp[0] = 1;
-        dp[1] = 1;
-        
-        
-        for (int i = 1; i < s.length(); i++) {
-            // single digit decode
-            if (s.charAt(i) != '0') {
-                dp[i + 1] = dp[i];
-            } 
-            
-            // double digit decode
-            if (s.charAt(i - 1) == '1' || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6')) {
-                dp[i + 1] += dp[i - 1];
+        dp[1]  = (s.charAt(0) == '0')? 0 : 1;
+
+        for (int i = 2; i < m + 1; i++) {
+            char prev = s.charAt(i - 2);
+            char curr = s.charAt(i - 1);
+
+            // single char decode, just take last possible amt
+            if (curr != '0') {
+                dp[i] = dp[i - 1];
+            }
+
+            // double char decode, add on ways to decode from 2 steps back (avoiding our double char decode)
+            // ex.     1 2 3
+            // dp = [1,1,2,3]
+                // dp[2] = dp[i - 1] + dp[i - 2] = 2 (since we are going to take 12 as decode, we need to take dp[i - 2])
+                // dp[3] = dp[i - 1] + dp[i - 2] = 3 (since we are going to take 23 as a decode, we need to take dp[i - 2])
+            if (prev == '1' || (prev == '2' && curr <= '6')) {
+                dp[i] += dp[i - 2];
             }
         }
-        return dp[s.length()];
+
+        return dp[m];
     }
+
+    // A DIFFERENT WAY OF MAPPING INDEXES
+    // public int numDecodings(String s) {
+    //     // dp[0] = 1
+    //     // if s[0] != 0, dp[1] = 1
+    //     // else return 0
+        
+    //     // if single digit decodes (aka s[i] != 0), dp[i] = dp[i - 1]
+    //     // if double digit decodes (aka 10 ~ 26), dp[i] += dp[i - 2]
+        
+    //     if (s.length() < 1 || s.charAt(0) == '0') {
+    //         return 0;
+    //     }
+        
+    //     int[] dp = new int[s.length() + 1];
+    //     dp[0] = 1;
+    //     dp[1] = 1;
+        
+        
+    //     for (int i = 1; i < s.length(); i++) {
+    //         // single digit decode
+    //         if (s.charAt(i) != '0') {
+    //             dp[i + 1] = dp[i];
+    //         } 
+            
+    //         // double digit decode
+    //         if (s.charAt(i - 1) == '1' || (s.charAt(i - 1) == '2' && s.charAt(i) <= '6')) {
+    //             dp[i + 1] += dp[i - 1];
+    //         }
+    //     }
+    //     return dp[s.length()];
+    // }
 }
