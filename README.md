@@ -108,6 +108,7 @@
 | 1328      | Break a Palindrome                                     | 1       | (unforgettable)                                                                        |
 | 1360      | Number of Days Between Two Dates                       | 1       | (super close, try implementing)                                                        |
 | 1361      | Validate Binary Tree Nodes                             | 1       | (not even close, implementation issue understand the edge cases)                       |
+| 1413      | Minimum Value to Get Positive Step by Step Sum         | 1       | (unforgettable)                                                                        |
 | 1480      | Running Sum of 1D Array                                |         |                                                                                        |
 | 1647      | Minimum Deletions to Make Character Frequencies Unique | 1       | (unforgettable)                                                                        |
 | 1658      | Minimum Operations to Reduce X to Zero                 | 1       | (super close, note input difference between 1658 & 325                                 |
