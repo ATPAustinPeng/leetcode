@@ -27,7 +27,7 @@
 ## Summer 2023 Internship & Full-Time Position Problems
 
 | Problem # | Problem Name                                           | # times | tips                                                                                   |
-| --------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------------------------------- |
+| --------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------------------------------- | --- |
 | 1         | Two Sum                                                | 4       | unforgettable (choose what you want to store in your hashmap)                          |
 | 2         | Add Two Numbers                                        |         |                                                                                        |
 | 3         | Longest Substring Without Repeating Characters         |         |                                                                                        |
@@ -105,6 +105,7 @@
 | 1249      | Minimum Remove to Make Valid Parentheses               | 2       | (super close, remember order of what to do, first remove ')' then '(')                 |
 | 1250      | Check If It Is a Good Array                            | 1       | (unforgettable, remember extended euclidean algorithm gcd = 1, then ax + by + ... = 1) |
 | 1254      | Number of Closed Islands                               | 1       | (super close, remember edge case)                                                      |
+| 1328      | Break a Palindrome                                     | 1       | (unforgettable)                                                                        |     |
 | 1360      | Number of Days Between Two Dates                       | 1       | (super close, try implementing)                                                        |
 | 1361      | Validate Binary Tree Nodes                             | 1       | (not even close, implementation issue understand the edge cases)                       |
 | 1480      | Running Sum of 1D Array                                |         |                                                                                        |
