@@ -27,7 +27,7 @@
 ## Summer 2023 Internship & Full-Time Position Problems
 
 | Problem # | Problem Name                                           | # times | tips                                                                                   |
-| --------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------------------------------- | --- |
+| --------- | ------------------------------------------------------ | ------- | -------------------------------------------------------------------------------------- |
 | 1         | Two Sum                                                | 4       | unforgettable (choose what you want to store in your hashmap)                          |
 | 2         | Add Two Numbers                                        |         |                                                                                        |
 | 3         | Longest Substring Without Repeating Characters         |         |                                                                                        |
@@ -105,12 +105,13 @@
 | 1249      | Minimum Remove to Make Valid Parentheses               | 2       | (super close, remember order of what to do, first remove ')' then '(')                 |
 | 1250      | Check If It Is a Good Array                            | 1       | (unforgettable, remember extended euclidean algorithm gcd = 1, then ax + by + ... = 1) |
 | 1254      | Number of Closed Islands                               | 1       | (super close, remember edge case)                                                      |
-| 1328      | Break a Palindrome                                     | 1       | (unforgettable)                                                                        |     |
+| 1328      | Break a Palindrome                                     | 1       | (unforgettable)                                                                        |
 | 1360      | Number of Days Between Two Dates                       | 1       | (super close, try implementing)                                                        |
 | 1361      | Validate Binary Tree Nodes                             | 1       | (not even close, implementation issue understand the edge cases)                       |
 | 1480      | Running Sum of 1D Array                                |         |                                                                                        |
 | 1647      | Minimum Deletions to Make Character Frequencies Unique | 1       | (unforgettable)                                                                        |
 | 1658      | Minimum Operations to Reduce X to Zero                 | 1       | (super close, note input difference between 1658 & 325                                 |
+| 1710      | Maximum Units on a Truck                               | 1       | (unforgettable)                                                                        |
 | 1743      | Restore the Array From Adjacent Pairs                  | 1       | (super close, graphs -> just re-solve)                                                 |
 | 1762      | Buildings With an Ocean View                           |         |                                                                                        |
 | 1861      | Rotating the Box                                       | 1       | (super close, how to perform 90 degree array rotation)                                 |
