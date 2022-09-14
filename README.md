@@ -86,6 +86,7 @@
 | 400       | Nth Digit                                              |         |                                                                                        |
 | 409       | Longest Palindrome                                     | 1       | (super close, use static array!)                                                       |
 | 412       | Fizz Buzz                                              | 1       | (unforgettable)                                                                        |
+| 423       | Reconstruct Original Digits from English               | 1       | (unforgettable)                                                                        |
 | 443       | String Compression                                     | 1       | (super close)                                                                          |
 | 445       | Add Two Numbers II                                     | 1       | (super close, remember the trick!)                                                     |
 | 509       | Fibonacci Number                                       | 1       | (super close, use dp table to save computed fibs, recursion to find)                   |
