@@ -102,6 +102,7 @@
 | 910       | Smallest Range II                                      | 1       | (not even close, do not understand the comparison)                                     |
 | 974       | Subarray Sums Divisible by K                           | 1       | (super close, remember the math trick, do an example, POST SOLUTION)                   |
 | 1010      | Pairs of Songs With Total Durations Divisible by 60    | 1       | (super close, remember that 0 mod 60 = 0 and 60 mod 60 = 0)                            |
+| 1048      | Longest String Chain                                   | 2       | (super close, remember bottom up approach)                                             |
 | 1099      | Two Sum Less Than K                                    | 1       | (super close, remember the trick!)                                                     |
 | 1249      | Minimum Remove to Make Valid Parentheses               | 2       | (super close, remember order of what to do, first remove ')' then '(')                 |
 | 1250      | Check If It Is a Good Array                            | 1       | (unforgettable, remember extended euclidean algorithm gcd = 1, then ax + by + ... = 1) |
