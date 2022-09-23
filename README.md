@@ -107,7 +107,7 @@
 | 1249      | Minimum Remove to Make Valid Parentheses               | 2       | (super close, remember order of what to do, first remove ')' then '(')                 |
 | 1250      | Check If It Is a Good Array                            | 1       | (unforgettable, remember extended euclidean algorithm gcd = 1, then ax + by + ... = 1) |
 | 1254      | Number of Closed Islands                               | 1       | (super close, remember edge case)                                                      |
-| 1328      | Break a Palindrome                                     | 1       | (unforgettable)                                                                        |
+| 1328      | Break a Palindrome                                     | 3       | (unforgettable, don't forget corner case strlen < 2)                                   |
 | 1360      | Number of Days Between Two Dates                       | 1       | (super close, try implementing)                                                        |
 | 1361      | Validate Binary Tree Nodes                             | 1       | (not even close, implementation issue understand the edge cases)                       |
 | 1413      | Minimum Value to Get Positive Step by Step Sum         | 1       | (unforgettable)                                                                        |

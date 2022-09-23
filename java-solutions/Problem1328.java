@@ -23,52 +23,23 @@
 
 public class Problem1328 {
     public String breakPalindrome(String p) {
-        // using char array and changing is faster than substring
-        int len = p.length();
+        // first half of p, left to right, try to replace with 'a'
+        // otherwise replace right most char with 'b' (since it must an 'a' string p is a palindrome)
         
-        if (len <= 1) {
+        if (p.length() < 2) {
             return "";
         }
         
-        char[] letters = p.toCharArray();
+        char[] c = p.toCharArray();
         
-        // if this loop passes that means p is made up of 'a' only
-        for (int i = 0; i < len / 2; i++) {
-            if (letters[i] != 'a') {
-                letters[i] = 'a';
-                return String.valueOf(letters);
+        for (int i = 0; i < c.length / 2; i++) {
+            if (c[i] != 'a') {
+                c[i] = 'a';
+                return new String(c);
             }
         }
         
-        letters[len - 1] = 'b';
-        return String.valueOf(letters);
+        c[c.length - 1] = 'b';
+        return new String(c);
     }
-    
-//     public String breakPalindrome(String p) {
-//         // length <= 1 will always be a palindromre
-//         if (p.length() <= 1) {
-//             return "";
-//         }
-        
-//         // to make smallest lexicographic, change letter from left to right
-//         // set the letter to a if not already a, and to b if it is already a
-//         boolean hasUpdatedStr = false;
-//         for (int i = 0; i < p.length() / 2; i++) {
-//             if (p.charAt(i) != 'a') {
-//                 hasUpdatedStr = true;
-//                 return p.substring(0, i) + "a" + p.substring(i + 1);
-//             }
-//         }
-        
-//         if (hasUpdatedStr == false) {
-//             for (int i = p.length() - 1; i > p.length() / 2 - 1; i--) {
-//                 if (p.charAt(i) != 'b') {
-//                     hasUpdatedStr = true;
-//                     return p.substring(0, i) + "b" + p.substring(i + 1);
-//                 }
-//             }
-//         }
-        
-//         return "";
-//     }
 }
