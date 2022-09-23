@@ -119,6 +119,7 @@
 | 1762      | Buildings With an Ocean View                           |         |                                                                                        |
 | 1861      | Rotating the Box                                       | 1       | (super close, how to perform 90 degree array rotation)                                 |
 | 1878      | Get Biggest Three Rhombus Sums in a Grid               | 1       | (close)                                                                                |
+| 1889      | Minimum Space Wasted From Packaging                    | 2       | (close, upper bound vs lower bound binary search)                                      |
 
 ### Problem Types
 
