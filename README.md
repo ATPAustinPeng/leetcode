@@ -32,7 +32,7 @@
 | 8         | String to Integer (atoi)                               |          |                                                                                        |
 | 13        | Roman to Integer                                       |          |                                                                                        |
 | 20        | Valid Parentheses                                      | 5 (DONE) | don't forget empty stack case...                                                       |
-| 21        | Merge Two Sorted Lists                                 | 2        | (close, try recursive, try in-place)                                                   |
+| 21        | Merge Two Sorted Lists                                 | 3 (DONE) | try to use less variable space (bc its a linked list q)                                |
 | 26        | Remove Duplicates from Sorted Array                    | 1        | (unforgettable)                                                                        |
 | 42        | Trapping Rain Water                                    | 1        | (not close, can brute force, understand dp, stack, or 2 ptr solution)                  |
 | 46        | Permutations                                           |          |                                                                                        |
