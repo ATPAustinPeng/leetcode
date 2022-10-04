@@ -1,21 +1,20 @@
 def isValid(self, string: str) -> bool:
-    # stack stores open parentheses
-    # pop off stack when see a closed parenthesis
-    opening = "{[("
-    closing = {
-        "}": "{",
-        "]": "[",
-        ")": "(",
+    parenMapping = {
+        ")" : "(",
+        "}" : "{",
+        "]" : "["
     }
     
-    stack = []
+    stack = list()
     
-    for s in string:
-        if s in opening:
-            stack.append(s)
-        elif stack == []:
-            return False
-        elif stack.pop() != closing.get(s):
-            return False
-
-    return stack == []
+    for c in string:
+        # see closed paren
+        if c in parenMapping:
+            if len(stack) == 0:
+                return False
+            if parenMapping[c] != stack.pop():
+                return False
+        # see open paren
+        else:
+            stack.append(c)
+    return len(stack) == 0

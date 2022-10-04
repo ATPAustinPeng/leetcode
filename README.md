@@ -26,12 +26,12 @@
 
 | Problem # | Problem Name                                           | # times  | tips                                                                                   |
 | --------- | ------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------- |
-| 1         | Two Sum                                                | 6 (DONE) | unforgettable                                                                          |
+| 1         | Two Sum                                                | 6 (DONE) |                                                                                        |
 | 2         | Add Two Numbers                                        |          |                                                                                        |
 | 3         | Longest Substring Without Repeating Characters         |          |                                                                                        |
 | 8         | String to Integer (atoi)                               |          |                                                                                        |
 | 13        | Roman to Integer                                       |          |                                                                                        |
-| 20        | Valid Parentheses                                      | 3        | (unforgettable, but stop forgetting empty stack case)                                  |
+| 20        | Valid Parentheses                                      | 5 (DONE) | don't forget empty stack case...                                                       |
 | 21        | Merge Two Sorted Lists                                 | 2        | (close, try recursive, try in-place)                                                   |
 | 26        | Remove Duplicates from Sorted Array                    | 1        | (unforgettable)                                                                        |
 | 42        | Trapping Rain Water                                    | 1        | (not close, can brute force, understand dp, stack, or 2 ptr solution)                  |
