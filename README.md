@@ -48,7 +48,7 @@
 | 98        | Validate Binary Search Tree                            | 1        | (close, write out the case ranges)                                                     |
 | 102       | Binary Tree Level Order Traversal                      | 1        | (super close, look at recursive sol, do space efficient bfs traversal)                 |
 | 104       | Maximum Depth of Binary Tree                           | 1        | (unforgettable)                                                                        |
-| 121       | Best Time to Buy and Sell Stock                        | 4        | (unforgettable)                                                                        |
+| 121       | Best Time to Buy and Sell Stock                        | 5 (DONE) |                                                                                        |
 | 125       | Valid Palindrome                                       |          |                                                                                        |
 | 138       | Copy List with Random Pointer                          |          |                                                                                        |
 | 142       | Linked List Cycle II                                   | 1        | (super close, understand math with O(1) space solution                                 |
