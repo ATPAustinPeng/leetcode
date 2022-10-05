@@ -63,6 +63,7 @@
 | 205       | Isomorphic Strings                                     | 1          | (close, dont forget about 1-1 mapping)                                                 |
 | 206       | Reverse Linked List                                    | 1          | (super close, try recursively)                                                         |
 | 217       | Contains Duplicate                                     | 2          | (unforgettable)                                                                        |
+| 226       | Invert Binary Tree                                     | 1 (ALMOST) | with recursion, just trace through the method stack                                    |
 | 235       | Lowest Common Ancestor of a Binary Search Tree         | 1          | (super close, determine the cases to solve)                                            |
 | 238       | Product of Array Except Self                           |            |                                                                                        |
 | 239       | Sliding Window Maximum                                 | 1          | (close, remember deque implementation, try dp solution)                                |
