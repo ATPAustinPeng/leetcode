@@ -67,7 +67,7 @@
 | 235       | Lowest Common Ancestor of a Binary Search Tree         | 1          | (super close, determine the cases to solve)                                            |
 | 238       | Product of Array Except Self                           |            |                                                                                        |
 | 239       | Sliding Window Maximum                                 | 1          | (close, remember deque implementation, try dp solution)                                |
-| 242       | Valid Anagram                                          | 1          | (unforgettable)                                                                        |
+| 242       | Valid Anagram                                          | 2 (DONE)   |                                                                                        |
 | 244       | Shortest Word Distance II                              | 1          | (super close, remember the case where you have same words)                             |
 | 259       | 3Sum Smaller                                           | 1          | (super close, remember the trick -> sort to allow 2 pointers)                          |
 | 268       | Missing Number                                         | 1          | (unforgettable, n(n + 1)/2 math trick)                                                 |
