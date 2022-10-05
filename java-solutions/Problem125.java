@@ -30,35 +30,41 @@
 
 public class Problem125 {
     public boolean isPalindrome(String s) {
-        // 2 pointers: left and right
-        // check left and right not space or special, left and right don't intersect
-        // case 1: left == right (alphabet only) -> contract left and right
-        // case 2: left != right -> break
+        // ASCII value of uppercase alphabets – 65 to 90. ASCII value of lowercase alphabets – 97 to 122.
+        int l = 0;
+        int r = s.length() - 1;
         
         s = s.toLowerCase();
         
-        int left = 0;
-        int right = s.length() - 1;
-        
-        while (left < right) {
-            
-            // check is alphabet
-            while (!isAlphanumeric(s.charAt(left)) && left < right) {
-                left++;
+        while (l < r) {
+            while (l < r && !Character.isLetterOrDigit(s.charAt(l))) {
+                l++;
+            }
+            while (l < r && !Character.isLetterOrDigit(s.charAt(r))) {
+                r--;
             }
             
-            while (!isAlphanumeric(s.charAt(right)) && left < right) {
-                right--;
-            }
-            
-            if (s.charAt(left) != s.charAt(right)) {
+            if (s.charAt(l) != s.charAt(r)) {
                 return false;
             }
-            left++;
-            right--;
+            l++;
+            r--;
         }
         
         return true;
+        
+        
+        // TOO SLOW! remove all non alphabetic and convert all upper to lower case
+//         s = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
+
+//         int n = s.length();
+        
+//         for (int i = 0; i < n / 2; i++) {
+//             if (s.charAt(i) != s.charAt(n - i - 1)) {
+//                 return false;
+//             }
+//         }
+//         return true;
     }
     
     private boolean isAlphanumeric(char c) {
