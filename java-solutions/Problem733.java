@@ -29,36 +29,38 @@
 
 public class Problem733 {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        // recursive
-        if (image[sr][sc] == color) {
-            return image;
-        }
+        int m = image.length;
+        int n = image[0].length;
         
-        floodFill(image, sr, sc, color, image[sr][sc]);
+        boolean[][] visited = new boolean[m][n];
+        
+        floodFillHelper(image, sr, sc, color, visited, image[sr][sc]);
+        
         return image;
     }
     
-    private void floodFill(int[][] image, int sr, int sc, int color, int initialColor) {
-        // check if sr and sc are within bounds
-        // check if image[sr][sc] is equal to color
-            // if equal, update to color, continue
-            // if not equal, return image
-        
-        if (sr < 0 || sr >= image.length) {
-            return;
-        }
-        if (sc < 0 || sc >= image[0].length) {
+    private void floodFillHelper(int[][] image, int sr, int sc, int color, boolean[][] visited, int prevColor) {
+        // index out of bounds
+        if (sr >= image.length || sr < 0 || sc >= image[0].length || sc < 0) {
             return;
         }
         
-        if (image[sr][sc] == initialColor) {
-            image[sr][sc] = color;
-            
-            floodFill(image, sr + 1, sc, color, initialColor); // down
-            floodFill(image, sr - 1, sc, color, initialColor); // up
-            floodFill(image, sr, sc + 1, color, initialColor); // right
-            floodFill(image, sr, sc - 1, color, initialColor); // left
+        // if index has been visited before
+        if (visited[sr][sc] == true) {
+            return;
         }
-        return;
+        
+        // if color at index is not the same as the starting color
+        if (image[sr][sc] != prevColor) {
+            return;
+        }
+        
+        visited[sr][sc] = true;
+        image[sr][sc] = color;
+        
+        floodFillHelper(image, sr + 1, sc, color, visited, prevColor);
+        floodFillHelper(image, sr - 1, sc, color, visited, prevColor);
+        floodFillHelper(image, sr, sc + 1, color, visited, prevColor);
+        floodFillHelper(image, sr, sc - 1, color, visited, prevColor); 
     }
 }
