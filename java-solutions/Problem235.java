@@ -29,25 +29,21 @@
 
 public class Problem235 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        // 3 cases
-            // p and q in left subtree
-            // p and q in right subtree
-            // p and q split (return their parent)
+        // 3 cases:
+        // p and q on right of root
+        // p and q on left of root
+        // p or q is the root
         
-        TreeNode curr = root;
-        int pVal = p.val;
-        int qVal = q.val;
-        
-        while (curr != null) {
-            if (pVal < curr.val && qVal < curr.val) {
-                curr = curr.left;
-            } else if (pVal > curr.val && qVal > curr.val) {
-                curr = curr.right;
-            } else {
-                return curr;
-            }
+        // if p and q are right of root, move the root to right
+        // if p and q are left of root, move the root to left
+        // if p and q are split (note: p and q can be the root), return the root
+        if (p.val > root.val && q.val > root.val) {
+            return lowestCommonAncestor(root.right, p, q);
+        } else if (p.val < root.val && q.val < root.val) {
+            return lowestCommonAncestor(root.left, p, q);
         }
-        return curr;
+        
+        return root;
     }
 
     /**
