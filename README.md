@@ -48,6 +48,7 @@
 | 98        | Validate Binary Search Tree                            | 1          | (close, write out the case ranges)                                                     |
 | 102       | Binary Tree Level Order Traversal                      | 1          | (super close, look at recursive sol, do space efficient bfs traversal)                 |
 | 104       | Maximum Depth of Binary Tree                           | 1          | (unforgettable)                                                                        |
+| 110       | Balanced Binary Tree                                   | 1 (ALMOST) | make sure to check balance for each subtree                                            |
 | 121       | Best Time to Buy and Sell Stock                        | 5 (DONE)   |                                                                                        |
 | 125       | Valid Palindrome                                       | 2 (ALMOST) | checking Character.isLetterOrDigit is faster than replacing                            |
 | 138       | Copy List with Random Pointer                          |            |                                                                                        |
