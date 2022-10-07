@@ -69,6 +69,7 @@
 | 217       | Contains Duplicate                                     | 3 (DONE)   |                                                                                        |
 | 226       | Invert Binary Tree                                     | 1 (ALMOST) | with recursion, just trace through the method stack                                    |
 | 232       | Implement Queue using Stacks                           | 1 (DONE)   |                                                                                        |
+| 234       | Palindrome Linked List                                 | 1 (DONE)   |                                                                                        |
 | 235       | Lowest Common Ancestor of a Binary Search Tree         | 2 (ALMOST) | remember key to BST (node > root => right of root; node < root => left of root)        |
 | 238       | Product of Array Except Self                           |            |                                                                                        |
 | 239       | Sliding Window Maximum                                 | 1          | (close, remember deque implementation, try dp solution)                                |
