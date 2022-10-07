@@ -19,16 +19,11 @@
 
 public class Problem104 {
     public int maxDepth(TreeNode root) {
-        // dfs
-        return dfs(root);
-    }
-    
-    private int dfs(TreeNode node) {
-        if (node == null) {
+        if (root == null) {
             return 0;
         }
         
-        return Math.max(dfs(node.right), dfs(node.left)) + 1;
+        return 1 + Math.max(maxDepth(root.right), maxDepth(root.left));
     }
 
     /**
