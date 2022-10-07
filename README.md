@@ -93,6 +93,7 @@
 | 443       | String Compression                                     | 1          | (super close)                                                                          |
 | 445       | Add Two Numbers II                                     | 1          | (super close, remember the trick!)                                                     |
 | 509       | Fibonacci Number                                       | 1          | (super close, use dp table to save computed fibs, recursion to find)                   |
+| 543       | Diameter of Binary Tree                                | 1 (ALMOST) | need global var to track diameter                                                      |
 | 589       | N-ary Tree Preorder Traversal                          | 1          | (super close, do recursive solution, realize dfs uses stack does reverse post order)   |
 | 598       | Range Addition II                                      | 1          | (unforgettable)                                                                        |
 | 695       | Max Area of Island                                     | 1          | (close, try implementation again)                                                      |
