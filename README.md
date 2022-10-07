@@ -47,6 +47,7 @@
 | 94        | Binary Tree Inorder Traversal                          | 1          | (unforgettable)                                                                        |
 | 98        | Validate Binary Search Tree                            | 1          | (close, write out the case ranges)                                                     |
 | 100       | Same Tree                                              | 1 (DONE)   |                                                                                        |
+| 101       | Symmetric Tree                                         | 1 (DONE)   |                                                                                        |
 | 102       | Binary Tree Level Order Traversal                      | 1          | (super close, look at recursive sol, do space efficient bfs traversal)                 |
 | 104       | Maximum Depth of Binary Tree                           | 2 (DONE)   | (unforgettable)                                                                        |
 | 110       | Balanced Binary Tree                                   | 1 (ALMOST) | make sure to check balance for each subtree                                            |
