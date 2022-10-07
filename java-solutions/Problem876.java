@@ -28,6 +28,7 @@ public class Problme876 {
             slow = slow.next;
             fast = fast.next.next;
         }
+        
         return slow;
     }
 

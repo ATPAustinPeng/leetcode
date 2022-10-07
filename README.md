@@ -103,7 +103,7 @@
 | 733       | Flood Fill                                             | 2 (DONE)   |                                                                                        |
 | 744       | Find Smallest Letter Greater Than Target               | 1          | (super close, remember you can use mod for loop around)                                |
 | 844       | Backspace String Compare                               | 2 (ALMOST) | reverse traversal to perform using O(n) time and O(1) space                            |
-| 876       | Middle of the Linked List                              | 1          | (unforgettable)                                                                        |
+| 876       | Middle of the Linked List                              | 2 (DONE)   |                                                                                        |
 | 910       | Smallest Range II                                      | 1          | (not even close, do not understand the comparison)                                     |
 | 974       | Subarray Sums Divisible by K                           | 1          | (super close, remember the math trick, do an example, POST SOLUTION)                   |
 | 1010      | Pairs of Songs With Total Durations Divisible by 60    | 1          | (super close, remember that 0 mod 60 = 0 and 60 mod 60 = 0)                            |
