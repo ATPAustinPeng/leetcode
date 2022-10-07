@@ -22,72 +22,36 @@
 
 public class Problem102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        // bfs (queue, left to right level order)
-        // track how many elements in the same level using queue size
-        
-        if (root == null) {
-            return new ArrayList<>();
-        }
-        
-        Queue<TreeNode> q = new LinkedList<>();
+        // bfs track levels
         List<List<Integer>> result = new ArrayList<>();
         
-        result.add(new ArrayList<>(Arrays.asList(root.val)));
-        if (root.left != null) {
-            q.add(root.left);   
-        }
-
-        if (root.right != null) {
-            q.add(root.right);    
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        
+        if (root == null) {
+            return result;
         }
         
-        // optimization
-        int level = 1;
         while (!q.isEmpty()) {
-            result.add(new ArrayList<>());
+            List<Integer> level = new ArrayList<>();
             
-            int numNodesOnLevel = q.size();
-            for (int i = 0; i < numNodesOnLevel; i++) {
-                TreeNode temp = q.remove();
-                result.get(level).add(temp.val);
+            int qSize = q.size();
+            for (int i = 0; i < qSize; i++) {
+                TreeNode removed = q.remove();
+                level.add(removed.val);
                 
-                if (temp.left != null) {
-                    q.add(temp.left);   
+                if (removed.left != null) {
+                    q.add(removed.left);    
                 }
-
-                if (temp.right != null) {
-                    q.add(temp.right);
+                if (removed.right != null) {
+                    q.add(removed.right);    
                 }
             }
-            level++;
+            result.add(level);    
         }
-        
-        // slightly more space complex than needed
-//         int numNodesOnLevel = q.size();
-//         List<Integer> sameLevelList = new ArrayList<>();
-//         while (!q.isEmpty()) {
-//             TreeNode temp = q.remove();
-//             if (temp.left != null) {
-//                 q.add(temp.left);   
-//             }
-            
-//             if (temp.right != null) {
-//                 q.add(temp.right);    
-//             }
-            
-//             sameLevelList.add(temp.val);
-            
-//             numNodesOnLevel--;
-            
-//             if (numNodesOnLevel == 0) {
-//                 numNodesOnLevel = q.size();
-//                 result.add(sameLevelList);
-//                 sameLevelList = new ArrayList<>();
-//             }
-//         }
-        
         return result;
     }
+
     /**
     * Definition for a binary tree node.
     * public class TreeNode {

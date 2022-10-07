@@ -49,7 +49,7 @@
 | 98        | Validate Binary Search Tree                            | 1          | (close, write out the case ranges)                                                     |
 | 100       | Same Tree                                              | 1 (DONE)   |                                                                                        |
 | 101       | Symmetric Tree                                         | 1 (DONE)   |                                                                                        |
-| 102       | Binary Tree Level Order Traversal                      | 1          | (super close, look at recursive sol, do space efficient bfs traversal)                 |
+| 102       | Binary Tree Level Order Traversal                      | 2 (DONE)   | solution is basically optimal, try to use less space                                   |
 | 104       | Maximum Depth of Binary Tree                           | 2 (DONE)   | (unforgettable)                                                                        |
 | 110       | Balanced Binary Tree                                   | 1 (ALMOST) | make sure to check balance for each subtree                                            |
 | 121       | Best Time to Buy and Sell Stock                        | 5 (DONE)   |                                                                                        |
