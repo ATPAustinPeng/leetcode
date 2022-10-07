@@ -40,6 +40,7 @@
 | 49        | Group Anagrams                                         | 1          | (super close, try categorize by char count)                                            |
 | 53        | Maximum Subarray                                       | 5 (ALMOST) | try recursive solution (maxSum is on left, right or crosses over)                      |
 | 56        | Merge Intervals                                        | 2          | (super close, check implementation & components solution)                              |
+| 57        | Insert Interval                                        | 1 (ALMOST) | implementation of 3 cases (before, after, intersecting intervals)                      |
 | 66        | Plus One                                               | 1          | (super close, don't mess up the carry...)                                              |
 | 70        | Climbing Stairs                                        | 3 (DONE)   |                                                                                        |
 | 74        | Search a 2D Matrix                                     | 1          | (unforgettable)                                                                        |
