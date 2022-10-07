@@ -78,7 +78,7 @@
 | 244       | Shortest Word Distance II                              | 1          | (super close, remember the case where you have same words)                             |
 | 252       | Meeting Rooms                                          | 1 (DONE)   |                                                                                        |
 | 259       | 3Sum Smaller                                           | 1          | (super close, remember the trick -> sort to allow 2 pointers)                          |
-| 268       | Missing Number                                         | 1          | (unforgettable, n(n + 1)/2 math trick)                                                 |
+| 268       | Missing Number                                         | 2 (DONE)   |                                                                                        |
 | 278       | First Bad Version                                      | 2 (DONE)   |                                                                                        |
 | 283       | Move Zeroes                                            | 2 (ALMOST) | remember to add t he correct number of 0s                                              |
 | 314       | Binary Tree Vertical Order Traversal                   |            |                                                                                        |
