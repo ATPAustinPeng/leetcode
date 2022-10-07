@@ -21,62 +21,25 @@
 
 public class Problem409 {
     public int longestPalindrome(String s) {
-        // FASTER: using static data structure (no dynamic increase in size)
-        // possible because String s is constructed using English letters only
-        char[] letterOccurrences = new char[128];
+        int[] charCounts = new int[26 + 26 + 6];
         
         for (int i = 0; i < s.length(); i++) {
-            letterOccurrences[s.charAt(i)]++;
+            charCounts[s.charAt(i) - 'A']++;
         }
         
-        int length = 0;
-        boolean oddUsedOnce = false;
-        for (int i = 0; i < letterOccurrences.length; i++) {
-            if (letterOccurrences[i] % 2 == 0) {
-                length += letterOccurrences[i];
-            } else if (!oddUsedOnce) {
-                length += letterOccurrences[i];
-                oddUsedOnce = true;
+        int longestPalindromeLen = 0;
+        boolean usedSingle = false;
+        for (int i = 0; i < charCounts.length; i++) {
+            if (charCounts[i] % 2 == 0) {
+                longestPalindromeLen += charCounts[i];
+            } else if (!usedSingle) {
+                usedSingle = true;
+                longestPalindromeLen += charCounts[i];
             } else {
-                length += (letterOccurrences[i] - 1);
+                longestPalindromeLen += charCounts[i] - 1;
             }
         }
         
-        return length;
-            
-        // SLOW: using Map
-        // map stores (character, # of occurrences)
-        // if there are 2 copies -> +2
-        // if there is any 1 copy -> +1 (can only happen once per string)
-//         Map<Character, Integer> hmap = new HashMap<>();
-        
-//         for (int i = 0; i < s.length(); i++) {
-//             char c = s.charAt(i);
-//             if (!hmap.containsKey(c)) {
-//                 hmap.put(c, 1);
-//             } else {
-//                 hmap.put(c, hmap.get(c) + 1);
-//             }
-//         }
-        
-//         int length = 0;
-//         boolean usedOneOddEntry = false;
-        
-//         for (Map.Entry<Character, Integer> charOccurence: hmap.entrySet()) {
-//             // 3 cases:
-//                 // even -> add to length
-//                 // first odd occurrence -> add to length
-//                 // second and beyond odd -> -1 then add to length
-//             if (charOccurence.getValue() % 2 == 0) {
-//                 length += charOccurence.getValue();
-//             } else if (!usedOneOddEntry) {
-//                 length += charOccurence.getValue();
-//                 usedOneOddEntry = true;
-//             } else {
-//                 length += charOccurence.getValue() - 1;
-//             }
-//         }
-        
-//         return length;
+        return longestPalindromeLen;
     }
 }

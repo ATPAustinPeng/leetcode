@@ -22,23 +22,21 @@
 
 public class Problem169 {
     public int majorityElement(int[] nums) {
-        int count = 1;
-        int prevIndex = 0;
+        // Boyer Moore alg (only works when there is a guarantee to be a majority element)
+        int count = 0;
+        int currElement = nums[0];
         
-        for (int i = 1; i < nums.length; i++) {
+        for (int i : nums) {
             if (count == 0) {
-                prevIndex = i;
+                currElement = i;
             }
             
-            if (nums[i] == nums[prevIndex]) {
+            if (currElement == i) {
                 count++;
             } else {
                 count--;
             }
-            
-            
         }
-        
-        return nums[prevIndex];
+        return currElement;
     }
 }

@@ -29,29 +29,20 @@ public class Problem278 {
       boolean isBadVersion(int version); */
 
     public int firstBadVersion(int n) {
-        // binary search
-        // Note: int overflow issue with large numbers
-        // Note: use 'left' ptr to return (no need to use variable for previous bad version)
-            // because of the way mid is calculated
-            // 1 2 3 4 (mid is 2) -> left will have the mid
-            // 1 2 3 4 5 (mid is 3) -> left or right having mid here doesn't matter bc center is mid
+        // essentially lower bound binary search (1-indexed)
+        int l = 1;
+        int r = n;
         
-        int left = 1;
-        int right = n;
-        
-        // int prevBadVersion = 0;
-        while (left <= right) {
-            // int mid = (left + right) / 2;
-            int mid = left + (right - left) / 2;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            
             if (isBadVersion(mid)) {
-                // prevBadVersion = mid;
-                right = mid - 1;
+                r = mid;
             } else {
-                left = mid + 1;
+                l = mid + 1;
             }
         }
         
-        return left;
-        // return prevBadVersion;
+        return l;
     }
 }
