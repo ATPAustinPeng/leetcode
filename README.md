@@ -64,7 +64,7 @@
 | 204       | Count Primes                                           | 1          | (super close, don't forget how to implement sieve)                                     |
 | 205       | Isomorphic Strings                                     | 1          | (close, dont forget about 1-1 mapping)                                                 |
 | 206       | Reverse Linked List                                    | 2 (DONE)   |                                                                                        |
-| 217       | Contains Duplicate                                     | 2          | (unforgettable)                                                                        |
+| 217       | Contains Duplicate                                     | 3 (DONE)   |                                                                                        |
 | 226       | Invert Binary Tree                                     | 1 (ALMOST) | with recursion, just trace through the method stack                                    |
 | 232       | Implement Queue using Stacks                           | 1 (DONE)   |                                                                                        |
 | 235       | Lowest Common Ancestor of a Binary Search Tree         | 2 (ALMOST) | remember key to BST (node > root => right of root; node < root => left of root)        |
