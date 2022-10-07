@@ -19,10 +19,6 @@
 
 public class Problem283 {
     public void moveZeroes(int[] nums) {
-        // zeroes can occur anywhere, but they're placement doesn't matter
-        // essentially collect all the non-zero elements
-        // and let the rest of the array after non-zero elements be 0
-        
         int nonZeroIndex = 0;
         
         for (int i = 0; i < nums.length; i++) {

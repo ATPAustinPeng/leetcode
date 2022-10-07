@@ -79,7 +79,7 @@
 | 259       | 3Sum Smaller                                           | 1          | (super close, remember the trick -> sort to allow 2 pointers)                          |
 | 268       | Missing Number                                         | 1          | (unforgettable, n(n + 1)/2 math trick)                                                 |
 | 278       | First Bad Version                                      | 2 (DONE)   |                                                                                        |
-| 283       | Move Zeroes                                            |            |                                                                                        |
+| 283       | Move Zeroes                                            | 2 (ALMOST) | remember to add t he correct number of 0s                                              |
 | 314       | Binary Tree Vertical Order Traversal                   |            |                                                                                        |
 | 325       | Maximum Size Subarray Sum Equals k                     | 1          | (not even close)                                                                       |
 | 344       | Reverse String                                         | 1          | (unforgettable)                                                                        |
