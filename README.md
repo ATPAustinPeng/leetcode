@@ -52,6 +52,7 @@
 | 110       | Balanced Binary Tree                                   | 1 (ALMOST) | make sure to check balance for each subtree                                            |
 | 121       | Best Time to Buy and Sell Stock                        | 5 (DONE)   |                                                                                        |
 | 125       | Valid Palindrome                                       | 2 (ALMOST) | checking Character.isLetterOrDigit is faster than replacing                            |
+| 136       | Single Number                                          | 1 (DONE)   |                                                                                        |
 | 138       | Copy List with Random Pointer                          |            |                                                                                        |
 | 141       | Linked List Cycle                                      | 1 (ALMOST) | remember null pointer access results in error (slow/fast ptr solution)                 |
 | 142       | Linked List Cycle II                                   | 1          | (super close, understand math with O(1) space solution                                 |
