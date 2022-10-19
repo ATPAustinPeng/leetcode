@@ -82,6 +82,7 @@
 | 268       | Missing Number                                         | 2 (DONE)   |                                                                                        |
 | 278       | First Bad Version                                      | 2 (DONE)   |                                                                                        |
 | 283       | Move Zeroes                                            | 2 (ALMOST) | remember to add t he correct number of 0s                                              |
+| 300       | Longest Increasing Subsequence                         | 1 (ALMOST) | note diff btwn upper and lower bound binary search & left=mid, right=mid cases         |
 | 314       | Binary Tree Vertical Order Traversal                   |            |                                                                                        |
 | 325       | Maximum Size Subarray Sum Equals k                     | 1          | (not even close)                                                                       |
 | 344       | Reverse String                                         | 1          | (unforgettable)                                                                        |
