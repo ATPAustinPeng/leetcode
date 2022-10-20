@@ -164,9 +164,7 @@
 | 33        | Search in Rotated Sorted Array       | array               | yes   |
 | 152       | Maximum Product Subarray             | array               | yes   |
 | 153       | Find Minimum in Rotated Sorted Array | array               | no    |
-| 217       | Contains Duplicate                   | array, hashset      | no    |
 | 746       | Min Cost Climbing Stairs             | dynamic programming | no    |
-| 844       | Backspace String Compare             | stack, pointer      | no    |
 | 1137      | N-th Tribonacci Number               | dynamic programming | no    |
 
 ### Additional Questions
