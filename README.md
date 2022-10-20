@@ -29,6 +29,7 @@
 | 1         | Two Sum                                                | 6 (DONE)   |                                                                                        |
 | 2         | Add Two Numbers                                        |            |                                                                                        |
 | 3         | Longest Substring Without Repeating Characters         |            |                                                                                        |
+| 4         | Median of Two Sorted Arrays                            | 1 (ALMOST) | remember the cases and while loop termination case                                     |
 | 8         | String to Integer (atoi)                               |            |                                                                                        |
 | 13        | Roman to Integer                                       |            |                                                                                        |
 | 20        | Valid Parentheses                                      | 5 (DONE)   | don't forget empty stack case...                                                       |
